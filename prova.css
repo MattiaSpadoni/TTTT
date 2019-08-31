@@ -1,0 +1,10 @@
+@media (max-width:305px){
+		.btn-group-toggle{
+		padding-top:5px;
+		}
+@media (max-width:250px){
+		.btn-group-toggle{
+		flex-flow: column wrap;
+		}
+
+
