@@ -4,9 +4,13 @@ body {
 	background-color: white;
 	background-image: url(table.jpg);
 }
-section {
+article section {
 	background-image: url(immagine_1.jpg);
-	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	display: flex;
+	background-size: 100% 100%;
+	background-position: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 8%;
+	padding-top:8%;
 }
