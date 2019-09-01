@@ -5,11 +5,11 @@ body {
 	background-image: url(table.jpg);
 }
 article  {
-	background-image: url(immagine_1.jpg);
-	background-size: 1000px 1000px;
+	background-image: url(immagine_4.jpg);
+	background-size: 100% 100%;
 	background-position: center;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 8%;
-	padding-top:8%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 13%;
+	padding-top:13%;
 }
