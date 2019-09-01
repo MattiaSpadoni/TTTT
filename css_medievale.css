@@ -2,4 +2,9 @@
 
 body {
 	background-color: white;
+	background-image: url(table.jpg);
+}
+section {
+	background-image: url(immagine_1.jpg);
+	background-size: auto;
 }
