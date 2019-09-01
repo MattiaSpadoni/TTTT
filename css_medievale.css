@@ -4,10 +4,9 @@ body {
 	background-color: white;
 	background-image: url(table.jpg);
 }
-article section {
+article  {
 	background-image: url(immagine_1.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 1000px 1000px;
 	background-position: center;
 	padding-left: 5%;
 	padding-right: 5%;
