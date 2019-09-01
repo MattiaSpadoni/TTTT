@@ -6,5 +6,7 @@ body {
 }
 section {
 	background-image: url(immagine_1.jpg);
-	background-size: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
 }
