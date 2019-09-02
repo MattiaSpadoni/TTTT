@@ -1,5 +1,10 @@
 /* css medievale prova */
 
+@font-face{
+	font-family: "proto-roman";
+	src: url(font/medieval/Sweynheim&Pannartz-ProtoRoman115R.otf);
+}
+
 body {
 	background-color: white;
 	background-image: url(table.jpg);
@@ -8,8 +13,55 @@ article  {
 	background-image: url(immagine_4.jpg);
 	background-size: 100% 100%;
 	background-position: center;
+	padding-left: 13%;
+	padding-right: 13%;
+	padding-bottom: 21%;
+	padding-top: 21%;
+	text-align: justify;
+	letter-spacing: 1px;
+	word-break:normal;
+
+}
+header {
+	text-align: center;
+
+}
+
+figure{
+
+}
+img {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p{
+	font-family: "proto-roman";
+	font-size: 14px;
+}
+
+h1 {
+	font-family: "proto-roman";
+	font-size: 20px;
+	text-transform: uppercase;
+}
+h2 {
+	font-family: "proto-roman";
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 320px){
+	article{
 	padding-left: 8%;
 	padding-right: 8%;
 	padding-bottom: 13%;
-	padding-top:13%;
+	padding-top: 13%;
+	}
+}
+@media (max-width: 540px) {
+	p{
+		font-size: 16px;
+	}
 }
