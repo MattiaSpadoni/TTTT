@@ -4,14 +4,23 @@
 	font-family: "proto-roman";
 	src: url(font/medieval/Sweynheim&Pannartz-ProtoRoman115R.otf);
 }
+@font-face{
+	font-family:"cursive-humanistic";
+	src: url(font/humanistic/Humanistic_Cursive.ttf);
+}
 
 body {
 	background-color: white;
 	background-image: url(table.jpg);
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 article  {
-	background-image: url(immagine_4.jpg);
+	background-image: url(immagine_2.jpg);
 	background-size: 100% 100%;
+	background-repeat: repeat;
 	background-position: center;
 	padding-left: 13%;
 	padding-right: 13%;
@@ -38,30 +47,32 @@ img {
 }
 p{
 	font-family: "proto-roman";
-	font-size: 14px;
+	font-size: 16px;
 }
 
 h1 {
 	font-family: "proto-roman";
-	font-size: 20px;
+	font-size: 48px;
 	text-transform: uppercase;
 }
 h2 {
+	font-family: "proto-roman";
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+h3 {
 	font-family: "proto-roman";
 	font-size: 18px;
 	text-transform: uppercase;
 }
 
-@media (max-width: 320px){
-	article{
-	padding-left: 8%;
-	padding-right: 8%;
-	padding-bottom: 13%;
-	padding-top: 13%;
-	}
+h3 {
+	font-family: "proto-roman";
+	font-size: 14px;
+	text-transform: uppercase;
 }
-@media (max-width: 540px) {
-	p{
-		font-size: 16px;
-	}
+
+em {
+   font
 }
