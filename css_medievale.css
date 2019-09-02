@@ -18,18 +18,22 @@ body {
 	margin-bottom: 10%;
 }
 article  {
-	background-image: url(immagine_2.jpg);
-	background-size: 100% 100%;
+	background-image: url(immagine.png);
+	background-size: 100%;
 	background-repeat: repeat;
 	background-position: center;
-	padding-left: 13%;
-	padding-right: 13%;
-	padding-bottom: 21%;
-	padding-top: 21%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 13%;
+	padding-top: 13%;
 	text-align: justify;
 	letter-spacing: 1px;
 	word-break:normal;
 
+}
+section{
+	column-count: 2;
+	column-gap: 10%;
 }
 header {
 	text-align: center;
