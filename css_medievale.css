@@ -2,18 +2,19 @@
 
 @font-face{
 	font-family: "proto-roman";
-	src: url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.otf);
-	src: url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.eot);
+	
+	src: url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.eot),
+		 url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.ttf);
 }
 @font-face{
 	font-family:"cursive-humanistic";
-	src: url(font/humanistic/humanistic_cursive.ttf);
-	src: url(font/humanistic/humanistic_cursive.eot);
+	src: url(font/humanistic/humanistic_cursive.eot),
+		 url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.ttf);
 }
 @font-face{
 	font-family: "initial";
-	src: url(font/humanistic/initial.ttf);
-	src: url(font/humanistic/initial.eot);
+	src: url(font/humanistic/initial.eot),
+		 url(font/humanistic/initial.ttf);
 }
 
 body {
