@@ -71,8 +71,9 @@ p{
 	color: rgba(0, 0, 0, 0.7);
 	text-decoration: overline;
 	text-decoration: underline;
-	text-decoration-style: solid;
 	text-decoration-color: rgba(0, 0, 0, 0.1);
+	-webkit-text-decoration-color: rgba(0, 0, 0, 0.1);
+	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
 }
 
 h1 {
