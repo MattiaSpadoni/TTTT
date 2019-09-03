@@ -8,6 +8,10 @@
 	font-family:"cursive-humanistic";
 	src: url(font/humanistic/Humanistic_Cursive.ttf);
 }
+@font-face{
+	font-family: "initial";
+	src: url(font/humanistic/initial.ttf);
+}
 
 body {
 	background-color: white;
@@ -35,6 +39,14 @@ section{
 	column-count: 2;
 	column-gap: 10%;
 }
+section::first-letter {
+	font-family: "initial";
+	font-size: 64px;
+	line-height: 32px;
+	float: left;
+	padding-top: 16px;
+	font-weight: 400 !important;
+}
 header {
 	text-align: center;
 
@@ -52,6 +64,8 @@ img {
 p{
 	font-family: "proto-roman";
 	font-size: 16px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
