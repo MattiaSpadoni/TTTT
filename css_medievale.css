@@ -2,15 +2,18 @@
 
 @font-face{
 	font-family: "proto-roman";
-	src: url(font/medieval/Sweynheim&Pannartz-ProtoRoman115R.otf);
+	src: url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.otf);
+	src: url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.eot);
 }
 @font-face{
 	font-family:"cursive-humanistic";
-	src: url(font/humanistic/Humanistic_Cursive.ttf);
+	src: url(font/humanistic/humanistic_cursive.ttf);
+	src: url(font/humanistic/humanistic_cursive.eot);
 }
 @font-face{
 	font-family: "initial";
 	src: url(font/humanistic/initial.ttf);
+	src: url(font/humanistic/initial.eot);
 }
 
 body {
@@ -42,7 +45,7 @@ section{
 	column-gap: 10%;
 
 }
-section::first-letter {
+section>p:nth-of-type(1)::first-letter {
 	font-family: "initial";
 	font-size: 64px;
 	line-height: 32px;
