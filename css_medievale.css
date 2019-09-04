@@ -105,6 +105,12 @@ h3 {
 	text-transform: uppercase;
 }
 
+h4 {
+	font-family: "proto-roman";
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
 em {
    font
 }
