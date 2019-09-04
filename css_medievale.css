@@ -12,7 +12,7 @@
 		 url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.eot);
 }
 @font-face{
-	font-family: "initial";
+	font-family: initial;
 	src: url(font/humanistic/initial.ttf),
 		 url(font/humanistic/initial.eot);
 }
