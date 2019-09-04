@@ -26,10 +26,14 @@ body {
 	margin-bottom: 10%;
 }
 article  {
+
+
+}
+section{
 	background-image: url(immagine.png);
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: repeat;
-	background-position: cover;
+	background-position: center;
 	padding-left: 8%;
 	padding-right: 8%;
 	padding-bottom: 13%;
@@ -37,13 +41,11 @@ article  {
 	text-align: justify;
 	letter-spacing: 1px;
 	word-break:normal;
-
-}
-section{
 	column-count: 2;
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
   	-moz-column-count: 2; /* Firefox */
 	column-gap: 10%;
+	margin: 10%;
 
 }
 section>p:nth-of-type(1)::first-letter {
@@ -54,6 +56,7 @@ section>p:nth-of-type(1)::first-letter {
 	padding-top: 16px;
 	font-weight: 400 !important;
 	color: rgba(0, 0, 0, 0.6);
+	font-style: normal !important;
 
 }
 header {
