@@ -12,7 +12,7 @@
 		 url(font/medieval/Sweynheim_Pannartz-ProtoRoman115R.eot);
 }
 @font-face{
-	font-family: initial;
+	font-family: "initial_letter";
 	src: url(font/humanistic/initial.ttf),
 		 url(font/humanistic/initial.eot);
 }
@@ -47,7 +47,7 @@ section{
 
 }
 section>p:nth-of-type(1)::first-letter {
-	font-family: initial;
+	font-family: "initial_letter";
 	font-size: 64px;
 	line-height: 32px;
 	float: left;
