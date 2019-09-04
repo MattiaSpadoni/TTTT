@@ -13,8 +13,8 @@
 }
 @font-face{
 	font-family: "initial_letter";
-	src: url(font/humanistic/initial.ttf),
-		 url(font/humanistic/initial.eot);
+	src: url(font/humanistic/initial3.ttf),
+		 url(font/humanistic/initial3.eot);
 }
 
 body {
@@ -53,6 +53,8 @@ section>p:nth-of-type(1)::first-letter {
 	float: left;
 	padding-top: 16px;
 	font-weight: 400 !important;
+	color: rgba(0, 0, 0, 0.6);
+
 }
 header {
 	text-align: center;
