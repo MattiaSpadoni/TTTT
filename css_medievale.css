@@ -19,26 +19,13 @@
 
 body {
 	background-color: white;
-
-	background-color: rgba(0, 0, 0, 0.8);
-
+	background-image: url(table.jpg);
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 article  {
-	/*background-image: url(immagine.png);*/
-	background-size: 100%;
-	background-repeat: repeat;
-	background-position: cover;
-	padding-left: 8%;
-	padding-right: 8%;
-	padding-bottom: 13%;
-	padding-top: 13%;
-	text-align: justify;
-	letter-spacing: 1px;
-	word-break:normal;
-
-
-}
-section{
 	background-image: url(immagine.png);
 	background-size: 100%;
 	background-repeat: repeat;
@@ -50,10 +37,14 @@ section{
 	text-align: justify;
 	letter-spacing: 1px;
 	word-break:normal;
+
+}
+section{
 	column-count: 2;
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
   	-moz-column-count: 2; /* Firefox */
 	column-gap: 10%;
+
 }
 section>p:nth-of-type(1)::first-letter {
 	font-family: "initial_letter";
@@ -63,13 +54,7 @@ section>p:nth-of-type(1)::first-letter {
 	padding-top: 16px;
 	font-weight: 400 !important;
 	color: rgba(0, 0, 0, 0.6);
-	font-style: normal !important;
 
-}
-h1::first-letter{
-	font-family: "initial_letter";
-	font-weight: 400 !important;
-	margin-top: 2.5%;
 }
 header {
 	text-align: center;
@@ -97,12 +82,10 @@ p{
 	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
 }
 
-/*h1 {
+h1 {
 	font-family: "proto-roman";
 	font-size: 48px;
 	text-transform: uppercase;
-	margin-top: -2.5%;
-	padding-top: 0%;
 }
 h2 {
 	font-family: "proto-roman";
@@ -126,20 +109,6 @@ h4 {
 	font-family: "proto-roman";
 	font-size: 10px;
 	text-transform: uppercase;
-}*/
-
-h1, h2, h3, h4 {
-	font-family: "proto-roman";
-	font-size: 16px;
-	font-weight: 600;
-	color: rgba(0, 0, 0, 0.7);
-	text-decoration: overline;
-	text-decoration: underline;
-	text-decoration-color: rgba(0, 0, 0, 0.1);
-	-webkit-text-decoration-color: rgba(0, 0, 0, 0.1);
-	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
-	text-align: justify;
-	margin-top: 0%;
 }
 
 em {
