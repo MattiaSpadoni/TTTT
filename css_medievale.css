@@ -1,4 +1,5 @@
 /* css medievale prova */
+/* fonts */
 
 @font-face{
 	font-family: "proto-roman";
@@ -17,43 +18,89 @@
 		 url(font/humanistic/initial3.eot);
 }
 
+/* normal css */
+
 body {
-	background-color: white;
-	background-image: url(table.jpg);
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	background-color: rgb(46, 46, 31);
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 }
 article  {
-
-
-}
-section{
 	background-image: url(immagine.png);
-	background-size: 100% 100%;
+	background-size: 100%;
 	background-repeat: repeat;
 	background-position: center;
+	column-gap: 10%;
 	padding-left: 8%;
 	padding-right: 8%;
 	padding-bottom: 13%;
 	padding-top: 13%;
-	text-align: justify;
-	letter-spacing: 1px;
-	word-break:normal;
-	column-count: 2;
-	-webkit-column-count: 2; /* Chrome, Safari, Opera */
-  	-moz-column-count: 2; /* Firefox */
-	column-gap: 10%;
-	margin: 10%;
+
 
 }
+
+section{
+	text-align: justify;
+	letter-spacing: 1px;
+	column-count: 2;
+	word-break: normal;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+  	-moz-column-count: 2; /* Firefox */
+  	column-gap: 10%;
+
+}
+
+
+table {
+	border-style: solid;
+	border-width: 10%;
+	font-family: "proto-roman";
+	border-color: rgba(0, 0, 0, 0.7);
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+
+}
+th{
+	
+	vertical-align: text-top;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	border-width: 2px;
+	border-collapse: collapse;
+}
+td{
+	vertical-align: text-top;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	border-width: 2px;
+}
+div{
+	background-image: url("miniature_3.png");
+	padding: 0%;
+	margin-top: 13%;
+	margin-bottom: 13%;
+	margin-left: -8%;
+	margin-right: -8%;
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
 section>p:nth-of-type(1)::first-letter {
 	font-family: "initial_letter";
 	font-size: 64px;
-	line-height: 32px;
+	line-height: 48px;
+	margin: 0%;
 	float: left;
-	padding-top: 16px;
 	font-weight: 400 !important;
 	color: rgba(0, 0, 0, 0.6);
 	font-style: normal !important;
@@ -72,6 +119,7 @@ figure{
 img {
 	display: block;
 	width: 100%;
+	padding: 0%;
 }
 p{
 	font-family: "proto-roman";
@@ -89,6 +137,7 @@ h1 {
 	font-family: "proto-roman";
 	font-size: 48px;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 h2 {
 	font-family: "proto-roman";
@@ -96,27 +145,138 @@ h2 {
 	text-transform: uppercase;
 }
 
-h3 {
-	font-family: "proto-roman";
-	font-size: 18px;
-	text-transform: uppercase;
-}
 
 h3 {
 	font-family: "proto-roman";
-	font-size: 14px;
+	font-size: 28px;
 	text-transform: uppercase;
 }
 
 h4 {
 	font-family: "proto-roman";
-	font-size: 10px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
-em {
-   font
-}
-a {
 
+
+h1::first-letter{
+	font-family: "initial_letter";
+	font-weight: 400 !important;
+
+}
+h2::first-letter{
+	font-family: "initial_letter";
+	font-weight: 400 !important;
+
+}
+h3::first-letter{
+	font-family: "initial_letter";
+	font-weight: 400 !important;
+
+}
+
+h1, h2, h3, h4{
+	color: rgb(204, 0, 0);
+}
+section:first-of-type p {
+	color: rgb(204, 0, 0);
+}
+
+figcaption{
+	font-family: "proto-roman";
+	font-style: italic;
+}
+
+a {
+	color: 120a8f;
+}
+a:hover{
+	color: ffd700;
+}
+
+/*
+
+---------------------media queries------------------------------
+
+*/
+
+@media(max-width: 768px){
+	h1 {
+	font-family: "proto-roman";
+	font-size: 32px;
+	text-transform: uppercase;
+	margin-top: 0;
+	word-break: break-all;
+}
+h2 {
+	font-family: "proto-roman";
+	font-size: 26px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+
+h3 {
+	font-family: "proto-roman";
+	font-size: 22px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+h4 {
+	font-family: "proto-roman";
+	font-size: 18px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+p{
+	font-family: "proto-roman";
+	font-size: 16px;
+}
+section{
+	text-align: justify;
+	column-count: 1;
+	word-break: normal;
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+  	-moz-column-count: 1;
+
+}
+}
+
+@media(max-width: 1024px){
+	h1 {
+	font-family: "proto-roman";
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-top: 0;
+	word-break: break-all;
+}
+h2 {
+	font-family: "proto-roman";
+	font-size: 32px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+
+h3 {
+	font-family: "proto-roman";
+	font-size: 24px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+h4 {
+	font-family: "proto-roman";
+	font-size: 18px;
+	text-transform: uppercase;
+
+	word-break: break-all;
+}
+p{
+	font-family: "proto-roman";
+	font-size: 16px;
+	word-break: break-all;
+}
 }
