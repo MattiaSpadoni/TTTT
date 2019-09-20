@@ -4,24 +4,34 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="prova.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="basic.css">
+		<script type="text/javascript">
+			function myFunction() {
+  				document.getElementById("second").id = "second-show";
+  			}
+  			function antifunzione(){
+  				document.getElementById("first").src = "Vitali_2.html";
+  				document.getElementById("second-show").id = "second";
+  			}
+  			
+  			
+		</script>
 	</head>
 	<body>
 		<nav class="fixed-top">
 		<div class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="btn-group btn-group-toggle" id="bottoni" data-toggle="buttons" >
         		<label class="btn btn-secondary">
-    				<input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+    				<input type="radio" name="options" id="option1" autocomplete="off" checked> 1450
   				</label>
   				<label class="btn btn-secondary">
-    				<input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    				<input type="radio" name="options" id="option2" autocomplete="off"> 1925
   				</label>
   				<label class="btn btn-secondary">
-    				<input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    				<input type="radio" name="options" id="option3" autocomplete="off"> 1970
   				</label>
   				<label class="btn btn-secondary">
-    				<input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    				<input type="radio" name="options" id="option4" autocomplete="off"> 2040
   				</label>
         	</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,50 +40,41 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
         		<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
         			<li class="nav-item active">
-        				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        			</li>
-        			<li class="nav-item active">
-        				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        			</li>
-        			<li class="nav-item active">
-        				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        			</li>
-        			<li class="nav-item dropdown">
+        				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
 	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          					<a class="dropdown-item" href="#">Action</a>
-	          					<a class="dropdown-item" href="#">Another action</a>
-	          					<a class="dropdown-item" href="#">Something else here</a>
+	          					<a class="dropdown-item" href="#" onclick="antifunzione()">Action</a>
+	          					<a class="dropdown-item" href="#" onclick="antifunzione()">Another action</a>
+	          					<a class="dropdown-item" href="#" onclick="myFunction()">Something else here</a>
 	          				</div>
+        			    </li>
+        			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        			</li>
+        			<li class="nav-item active">
+        				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        			</li>
+        			<li class="nav-item active">
+        				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         			</li>
         		</ul>
 			</div>
 		</nav>
-		<div class="timeline">
-		
-		</div>
-    	<div>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova</p>
-			<div  id="bombolone">
-				<p id="nonneta">provaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprovaprova</p>
-			</div>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-			<p>prova</p>
-		</div>
+		<main class="container" style="margin-top: 5em">
+			<div class="row">
+		    	<iframe class="embed-responsive col-12" id="first" src="Vitali_1.html">
+					<p></p>
 
-		<!-- Footer -->
+
+				</iframe>
+		    	<div class="container col-6" id="second">
+					<p>prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova</p>
+				
+
+				</div>
+		    </div>
+	</main>
+
+			<!-- Footer -->
 		<footer class="page-footer font-small blue pt-4">
 
 		  <!-- Footer Links -->
