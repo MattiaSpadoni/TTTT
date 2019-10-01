@@ -1,19 +1,26 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="prova.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="basic.css">
+
 		<script type="text/javascript">
 			function myFunction() {
   				document.getElementById("second").id = "second-show";
   			}
-  			function antifunzione(){
-  				document.getElementById("first").src = "Vitali_2.html";
-  				document.getElementById("second-show").id = "second";
-  			}
-  			
+
+		function change_css(){
+
+
+			var iframe_content = document.getElementById("first");
+			var style = iframe_content.contentWindow.document.getElementById("test");
+
+			alert("blablabla");
+
+			}
+		</script>
   			
 		</script>
 	</head>
@@ -21,8 +28,8 @@
 		<nav class="fixed-top">
 		<div class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="btn-group btn-group-toggle" id="bottoni" data-toggle="buttons" >
-        		<label class="btn btn-secondary">
-    				<input type="radio" name="options" id="option1" autocomplete="off" checked> 1450
+        		<label class="btn btn-secondary" onclick="change_css()">
+    				<input type="radio" name="options" id="option1" autocomplete="off"> 1450
   				</label>
   				<label class="btn btn-secondary">
     				<input type="radio" name="options" id="option2" autocomplete="off"> 1925
@@ -43,7 +50,7 @@
         				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
 	        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          					<a class="dropdown-item" href="#" onclick="antifunzione()">Action</a>
+	          					<a class="dropdown-item" href="#" onclick="change_css()">Action</a>
 	          					<a class="dropdown-item" href="#" onclick="antifunzione()">Another action</a>
 	          					<a class="dropdown-item" href="#" onclick="myFunction()">Something else here</a>
 	          				</div>
@@ -61,8 +68,7 @@
 		</nav>
 		<main class="container" style="margin-top: 5em">
 			<div class="row">
-		    	<iframe class="embed-responsive col-12" id="first" src="Vitali_1.html">
-					<p></p>
+		    	<iframe class="embed col-6" id="first" src="Vitali_1.html">
 
 
 				</iframe>
@@ -141,4 +147,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+</html>
+
 
