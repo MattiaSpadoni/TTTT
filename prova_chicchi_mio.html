@@ -5,6 +5,29 @@
 		<link rel="stylesheet" type="text/css" href="prova.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script type="text/javascript">
+						function myFunction() {
+  				document.getElementById("second").id = "second-show";
+  			}
+
+		function change_css(){
+
+			/*appunti: se si vuole un elemento che scende con i nomi degli articoli,
+			onclick nome articolo
+			--> change iframe src
+			--> change iframe content style
+			--> display after it, because is not beautiful to see the changes running.*/
+
+			var iframe_content = document.getElementById("first");
+			iframe_content.style.visibility = "hidden";
+			iframe_content.src = "vitali_2.html";
+			setTimeout(function(){
+				iframe_content.style.visibility = "visible";
+			}, 2000);
+
+
+
+
+			}
 		</script>
 	</head>
 	<body>
