@@ -20,6 +20,7 @@
 			var iframe_content = document.getElementById("first");
 			iframe_content.style.visibility = "hidden";
 			iframe_content.src = "vitali_2.html";
+			iframe_content.contentWindow.getElementById("test").setAttribute("href", "css_medievale.css");
 			setTimeout(function(){
 				iframe_content.style.visibility = "visible";
 			}, 2000);
