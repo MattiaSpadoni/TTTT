@@ -79,7 +79,10 @@ section > p:nth-of-type(odd){
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_1;
   	animation-duration: 3s;
-  	animation-play-state: running;
+
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
 
 }
 
@@ -97,7 +100,10 @@ section > p:nth-of-type(even){
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_2;
   	animation-duration: 3s;
-  	animation-play-state: running;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	
 }
 section > p:nth-of-type(even):hover{
 	background-color: rgb(128, 128, 255) !important;
@@ -114,6 +120,9 @@ section > figure{
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_3;
   	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
   	animation-fill-mode: forwards;
 
 }
@@ -172,7 +181,10 @@ table{
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_3;
   	animation-duration: 3s;
-  	animation-play-state: running;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	
   	border-style: solid;
   	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -255,7 +267,10 @@ h5 {
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_3;
   	animation-duration: 3s;
-  	animation-play-state: running;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+
   	width: 40%;
 
 
@@ -267,7 +282,9 @@ q{
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_3;
   	animation-duration: 3s;
-  	animation-play-state: running;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
   	border-style: solid;
   	border-width: 7px;
 	border-color: rgb(153, 204, 255);
