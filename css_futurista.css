@@ -1,0 +1,456 @@
+/*css_futuristico*/
+
+/*-------------------------------
+fonts
+-------------------------------*/
+
+@font-face{
+	font-family: "title";
+	src: url(font/communism/SovietProgram.eot),
+		 url(font/communism/SovietProgram.ttf);
+
+}
+@font-face{
+	font-family: "text";
+	src: url(font/communism/molot.eot),
+		 url(font/communism/molot.otf);
+
+}
+body{
+
+	background-image: url("futuristic_background.png");
+
+	background-repeat: repeat;
+
+}
+
+
+article{
+
+	background-color: white;
+	margin: 7.5%;
+	padding: 0px;
+	background-color: transparent;
+
+	
+
+}
+header{
+	display: block;
+	min-width: 100%;
+	text-align: center;
+	border-style: solid;
+	border-width: 7px;
+	transform: perspective(1000px) rotateX(3deg) rotateY(5deg);
+	margin-top: 7.5%;
+	margin-bottom: 7.5%;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.35);
+
+
+}
+
+section {
+
+
+padding: 0px;
+margin: 0px;
+
+}
+section p{
+	display: inline-block;
+	padding: 1%;
+	margin: 0px;
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+
+}
+section > p:nth-of-type(odd){
+	display: inline-block;
+	text-align: justify;
+	height: auto;
+	background-color: rgb(217, 179, 255);
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+  	animation-play-state: running;
+
+}
+
+section > p:nth-of-type(odd):hover{
+	background-color: rgb(193, 128, 255) !important;
+
+  }
+section > p:nth-of-type(even){
+	display: inline-block;
+	text-align: justify;
+	height: auto;
+	background-color: rgb(204, 204, 255);
+  	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+  	animation-play-state: running;
+}
+section > p:nth-of-type(even):hover{
+	background-color: rgb(128, 128, 255) !important;
+
+  }
+section > figure{
+	padding-left: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	max-width: 40%;
+	border:none;
+
+	-webkit-animation-name: animation_3; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_3;
+  	animation-duration: 3s;
+  	animation-fill-mode: forwards;
+
+}
+
+
+h1, h2, h3, h5 {
+	font-family: "title";
+	word-break: break-all;
+}
+
+p, figcaption, h4, h6, table, q {
+	font-family: "text";
+	word-break: normal;
+}
+
+
+
+
+section figure{
+	padding-left: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	float: left;
+	width: 100%;
+	border-style: solid;
+	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+
+
+
+
+}
+figure > img{
+	width: 100%;
+	height: auto;
+	padding: 0%;
+	margin: 0%;
+	object-fit: contain;
+
+
+}
+figcaption{
+	width: 100%;
+	height: auto;
+	padding: 0%;
+	margin: 0%;
+	object-fit: contain;
+
+}
+
+table{
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_3; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_3;
+  	animation-duration: 3s;
+  	animation-play-state: running;
+  	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 204,0.5);
+	border-collapse: collapse;
+
+
+}
+table:hover{
+	background-color: rgb(255, 255, 179);
+}
+td{
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	border-collapse: collapse;
+}
+th{
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	border-collapse: collapse;
+}
+tr{
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	border-collapse: collapse;
+}
+footer > p {
+	display: inline-block;
+	padding: 1%;
+	margin: 0px;
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+}
+footer > p:nth-of-type(odd):hover{
+	background-color: rgb(193, 128, 255) !important;
+
+  }
+footer > p:nth-of-type(even):hover{
+	background-color: rgb(128, 128, 255) !important;
+
+  }
+footer {
+	display: flex;
+	flex-direction: column;
+}
+a{
+	color: rgb(255, 255, 179);
+}
+a:hover{
+	color: rgb(153, 204, 255);
+}
+a:active{
+	color: rgb(255, 255, 128);
+}
+
+h4{
+
+}
+h5 {
+	display: inline-block;
+
+	text-align: center;
+	border-style: solid;
+	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_3; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_3;
+  	animation-duration: 3s;
+  	animation-play-state: running;
+  	width: 40%;
+
+
+}
+q{
+	display: inline-block;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_3; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_3;
+  	animation-duration: 3s;
+  	animation-play-state: running;
+  	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 204,0.5);
+	border-collapse: collapse;
+	font-style: italic;
+}
+q:hover{
+	background-color: rgb(255, 255, 179);
+}
+
+
+/*------------------font dimension-------------------------*/
+
+p{
+	font-size: 16px;
+}
+
+q{
+	font-size: 16px;
+}
+
+h1 {
+
+	font-size: 48px;
+
+}
+h2 {
+	font-size: 36px;
+}
+
+
+h3 {
+	font-size: 28px;
+}
+
+h4{
+
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+
+
+/*---------------------------------------------------------*/
+
+
+/*animation CSS*/
+
+@keyframes animation_1{
+
+	from{margin-right: 50%;}
+	to{margin-right: 25%;}
+	from{margin-left: 50%;}
+	to{margin-left: 5%;}
+}
+@-webkit-keyframes animation_1{
+
+	from{margin-right: 50%;}
+	to{margin-right: 25%;}
+	from{margin-left: 50%;}
+	to{margin-left: 5%;}
+}
+@keyframes animation_2{
+
+	from{margin-right: 50%;}
+	to{margin-right: 5%;}
+	from{margin-left: 50%;}
+	to{margin-left: 25%;}
+
+}
+@-webkit-keyframes animation_2{
+
+	from{margin-right: 50%;}
+	to{margin-right: 5%;}
+	from{margin-left: 50%;}
+	to{margin-left: 25%;}
+
+}
+@keyframes animation_3{
+
+	from{margin-right: 50%;}
+	to{margin-right: 30%;}
+	from{margin-left: 50%;}
+	to{margin-left: 30%;}
+
+}
+@-webkit-keyframes animation_3{
+
+	from{margin-right: 50%;}
+	to{margin-right: 30%;}
+	from{margin-left: 50%;}
+	to{margin-left: 30%;}
+
+}
+/*------------------------------------------------------*/
+
+
+/*-------------------------media queries----------------*/
+
+@media(max-width: 768px){
+	h1 {
+	font-size: 32px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+h2 {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+
+h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+h4{
+
+	font-size: 16px;
+}
+
+h5 {
+
+	font-size: 18px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+p{
+	font-size: 16px;
+}
+}
+@media(max-width: 1024px){
+	h1 {
+
+	font-size: 40px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+h2 {
+
+	font-size: 32px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+
+h3 {
+
+	font-size: 24px;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+h4{
+
+	font-size: 16px;
+	word-break: break-all;
+}
+
+h5 {
+
+	font-size: 18px;
+	text-transform: uppercase;
+
+	word-break: break-all;
+}
+p{
+
+	font-size: 16px;
+	word-break: break-all;
+}
+}
+
+
+
+/*-----------------------------------------------------*/
+
+
+
+

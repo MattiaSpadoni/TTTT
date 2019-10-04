@@ -1,0 +1,8 @@
+/*basic css for homepage*/
+
+#second{
+	display: none;
+}
+#second-show{
+	display: inline-block;
+}
