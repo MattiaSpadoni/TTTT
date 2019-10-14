@@ -9,27 +9,20 @@
   				document.getElementById("second").id = "second-show";
   			}
 
-		function change_css(){
-
-			/*appunti: se si vuole un elemento che scende con i nomi degli articoli,
-			onclick nome articolo
-			--> change iframe src
-			--> change iframe content style
-			--> display after it, because is not beautiful to see the changes running.*/
-
-			var iframe_content = document.getElementById("first");
-			iframe_content.style.visibility = "hidden";
-			iframe_content.src = "vitali_2.html";
-			var style = iframe_content.contentWindow;
-			style.document.getElementById("test").setAttribute("href", "css_medievale.css");
-			setTimeout(function(){
-				iframe_content.style.visibility = "visible";
-			}, 2000);
-
-
-
-
-			}
+  			function change_css(){
+  				var change_src = new Promise(function(resolve, reject){
+  						
+  				document.getElementById("first").src="vitali_2.html";
+  				var style = document.getElementById("first");
+  				style.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
+  			});
+  				/*change_src.then(
+  					function{
+  						alert("ho fatto");
+  					}
+					)*/
+ 
+  			}
 		</script>
 	</head>
 	<body>
