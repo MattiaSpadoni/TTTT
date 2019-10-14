@@ -8,3 +8,18 @@
 		}
 
 
+
+
+
+
+
+iframe {
+		border:none;
+		seamless: seamless;
+		scrolling:none;
+
+}
+
+.row_iframe {
+			align:center;
+}
