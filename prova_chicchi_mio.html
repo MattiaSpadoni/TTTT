@@ -9,7 +9,7 @@
   				document.getElementById("second").id = "second-show";
   			}
 
-  			function change_css(){
+  			/*function change_css(){
   				var change_src = new Promise(function(resolve, reject){
   						
   				document.getElementById("first").setAttribute("src","vitali_2.html");
@@ -25,6 +25,15 @@
   					}
 					)
  
+  			}*/
+
+  			function change_css(){
+  				var iframe_content = document.getElementById("first");
+  				iframe_content.setAttribute("src", "vitali_2.html");
+
+  				iframe_content.onload() = function{
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
+  				}
   			}
 		</script>
 	</head>
