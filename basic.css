@@ -6,3 +6,36 @@
 #second-show{
 	display: inline-block;
 }
+
+
+/*
+I'm trying to create a system that when clicking a button in the HTML then it change both SRC and then the style of document inside the iframe.
+The problem is that all work perfectly: I don't have any cross-origin issue. But the browser does not change the style of the iframe content.
+There is the script code:
+```
+  			function change_css(){
+  				var change_src = new Promise(function(resolve, reject){
+  						
+  				document.getElementById("first").src="document_2.html";
+
+  				resolve();
+  			});
+  				change_src.then(
+  					function(){
+  						setTimeout(function(){console.log("done");}, 3000);
+  						var style = document.getElementById("first");
+  						style.contentWindow.document.getElementById("test").setAttribute("href", "css_2.css");
+  					}
+					)
+ 
+  			}
+
+```
+
+I am using a promise to change the Iframe SRC first and then change the style of the iframe content. The problem is that the style actually does not change.
+
+this is the HTML code inside the iframe document:
+``` 
+ <link rel="stylesheet" id="test" type="text/css" href="css_1.css">
+``` 
+*/
