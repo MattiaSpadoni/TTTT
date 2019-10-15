@@ -12,14 +12,14 @@
   			function change_css(){
   				var change_src = new Promise(function(resolve, reject){
   						
-  				document.getElementById("first").src="vitali_2.html";
+  				document.getElementById("first").setAttribute("src","vitali_2.html");
 
   				resolve();
   			});
   				change_src.then(
   					function(){
   						var style = document.getElementById("first");
-  						style.contentWindow.location.reload();
+
   						setTimeout(function(){console.log("ho fatto");}, 3000);
   						style.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
   					}
