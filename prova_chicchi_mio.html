@@ -18,8 +18,9 @@
   			});
   				change_src.then(
   					function(){
-  						setTimeout(function(){console.log("ho fatto");}, 3000);
   						var style = document.getElementById("first");
+  						style.location.reload(true);
+  						setTimeout(function(){console.log("ho fatto");}, 3000);
   						style.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
   					}
 					)
