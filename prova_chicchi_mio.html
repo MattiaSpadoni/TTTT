@@ -30,12 +30,12 @@
   			function change_css(){
 
   				var iframe_content = document.getElementById("first");
-  				iframe_content.style.display = "hidden";
+  				iframe_content.style.visibility = "hidden";
   				iframe_content.setAttribute("src", "vitali_2.html");
 
   				iframe_content.onload = function(){
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
-  					iframe_content.style.display = "visible";
+  					iframe_content.style.visibility = "visible";
   				}
   			}
 		</script>
