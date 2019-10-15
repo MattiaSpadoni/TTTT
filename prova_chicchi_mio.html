@@ -35,7 +35,7 @@
 
   				iframe_content.onload = function(){
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
-  					iframe_content.style.visibility = "visible";
+  					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
   				}
   			}
 		</script>
