@@ -19,7 +19,7 @@
   				change_src.then(
   					function(){
   						var style = document.getElementById("first");
-  						style.contentWindow.location.reload(true);
+  						style.contentWindow.location.reload();
   						setTimeout(function(){console.log("ho fatto");}, 3000);
   						style.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
   					}
