@@ -27,17 +27,17 @@
  
   			}*/
 
-  			function change_css(input){
+  			function change_css(input, input_2){
   				src = input.id;
   				css = input.name;
   				var iframe_content = document.getElementById("first");
   				iframe_content.style.visibility = "hidden";
-  				iframe_content.setAttribute("src", src);
+  				iframe_content.setAttribute("src", input);
 
   				iframe_content.onload = function(){
-  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input_2);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
-  					console.log(src, css);
+  					console.log(input, input_2);
   				}
   			}
 		</script>
@@ -70,7 +70,7 @@
 	      	<nav class="nav d-flex justify-content-center">
 	      		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">1500</a>
 	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
+	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css('vitali_2.html', 'css_medievale.css')">Art #1</a>
 	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
 	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
 	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
@@ -97,7 +97,7 @@
 	       			</div>
 	       		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">2040</a>
 	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_3.html" onclick="change_css(this)">Art #1</a>
+	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_3.html" onclick="change_css('vitali_3.html', 'css_futurista.css')">Art #1</a>
 	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
 	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
 	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
