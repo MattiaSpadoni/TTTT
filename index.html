@@ -26,10 +26,11 @@
 					)
  
   			}*/
-
+  			var src = "";
+  			var css = "";
   			function change_css(input, input_2){
-  				src = input.id;
-  				css = input.name;
+  				var src = input.id;
+  				var css = input.name;
   				var iframe_content = document.getElementById("first");
   				iframe_content.style.visibility = "hidden";
   				iframe_content.setAttribute("src", input);
