@@ -27,15 +27,17 @@
  
   			}*/
 
-  			function change_css(){
-
+  			function change_css(input){
+  				var src = input.id;
+  				var css = input.name;
   				var iframe_content = document.getElementById("first");
   				iframe_content.style.visibility = "hidden";
-  				iframe_content.setAttribute("src", "vitali_2.html");
+  				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
-  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", "css_medievale.css");
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
+  					console.log(src, css);
   				}
   			}
 		</script>
@@ -68,7 +70,7 @@
 	      	<nav class="nav d-flex justify-content-center">
 	      		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">1500</a>
 	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" onclick="change_css()">Art #1</a>
+	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
 	          			<a class="dropdown-item" href="#" onclick="change_css()">Art #2</a>
 	          			<a class="dropdown-item" href="#" onclick="change_css()">Art #3</a>
 	          			<a class="dropdown-item" href="#" onclick="change_css()">Art #4</a>
