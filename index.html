@@ -34,7 +34,7 @@
   				iframe_content.setAttribute("src", input.id);
 
   				iframe_content.onload = function(){
-  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input_2);
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input.name);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
   					console.log(input);
   				}
