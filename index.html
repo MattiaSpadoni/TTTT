@@ -32,7 +32,6 @@
   				var iframe_content = document.getElementById("first");
   				iframe_content.style.visibility = "hidden";
   				iframe_content.setAttribute("src", input.id);
-  				console.log(input.id, input.name);
 
   				iframe_content.onload = function(){
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input_2);
