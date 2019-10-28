@@ -36,11 +36,12 @@
   				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
-  					var head = iframe_content.contentWndow.document.getElementsByTagName("head");
+  					console.log(iframe_content);
+  					/*var head = iframe_content.contentWndow.document.getElementsByTagName("head");
   					head.removeChild("link");
   					var link = head.createElement("link");
   					link.rel = "stylesheet";
-  					link.href = css;
+  					link.href = css;*/
 
 
   					/*iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input.name);
