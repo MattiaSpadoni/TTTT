@@ -36,17 +36,17 @@
   				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
-  					var head = iframe_content.contentWndow.document.getElementsByTagName("head");
+  					/*var head = iframe_content.contentWndow.document.getElementsByTagName("head");
   					console.log(head);
-  					/*head.removeChild("link");
+  					head.removeChild("link");
   					var link = head.createElement("link");
   					link.rel = "stylesheet";
   					link.href = css;*/
 
 
-  					/*iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input.name);
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
-  					console.log(input.id, input.name);*/
+  					console.log(src, css);
   				}
   			}
 		</script>
