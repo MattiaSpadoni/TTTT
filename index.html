@@ -36,9 +36,9 @@
   				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
-  					console.log(iframe_content);
-  					/*var head = iframe_content.contentWndow.document.getElementsByTagName("head");
-  					head.removeChild("link");
+  					var head = iframe_content.contentWndow.document.getElementsByTagName("head");
+  					console.log(head);
+  					/*head.removeChild("link");
   					var link = head.createElement("link");
   					link.rel = "stylesheet";
   					link.href = css;*/
