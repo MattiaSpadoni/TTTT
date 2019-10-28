@@ -29,9 +29,11 @@
 
   			function change_css(input){
   				
+  				var src = input.id;
+  				var css = input.name;
   				var iframe_content = document.getElementById("first");
   				iframe_content.style.visibility = "hidden";
-  				iframe_content.setAttribute("src", input.id);
+  				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
   					var head = iframe_content.contentWndow.document.getElementsByTagName("head");
