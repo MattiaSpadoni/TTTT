@@ -34,9 +34,16 @@
   				iframe_content.setAttribute("src", input.id);
 
   				iframe_content.onload = function(){
-  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input.name);
+  					var head = iframe_content.contentWndow.document.getElementsByTagName("head");
+  					head.removeChild("link");
+  					var link = head.createElement("link");
+  					link.rel = "stylesheet";
+  					link.href = css;
+
+
+  					/*iframe_content.contentWindow.document.getElementById("test").setAttribute("href", input.name);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
-  					console.log(input.id, input.name);
+  					console.log(input.id, input.name);*/
   				}
   			}
 		</script>
