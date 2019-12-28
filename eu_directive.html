@@ -17,8 +17,8 @@
     	var parser_2 = new DOMParser();
     	var part_2 = parser_2.parseFromString(text_right, "text/html");
     	console.log(part_1, part_2);
-    	var prova = part_1.document.getElementsByTagName("section");
-    	var prova_2 = part_2.document.getElementsByTagName("section");
+    	var prova = part_1.getElementsByTagName("section");
+    	var prova_2 = part_2.getElementsByTagName("section");
     	console.log(prova, prova_2);
     	dispiega_elementi(prova, prova_2);
 
