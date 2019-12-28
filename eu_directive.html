@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="prova.css">
+	<script type="text/javascript">
+		window.onload = richiesta_array("./Direttiva_1.html", "./direttiva_2.html");
+	</script>
+	<script type="text/javascript">
+
+
+	async function richiesta_array(input_1, input_2){
+		var left = await fetch(input_1);
+		var right = await  fetch(input_2);
+		var test_left = await left.text();
+		var test_right = await right.text();
+		var parser = new DOMParser();
+    	var part_1 = parser.parseFromString(test_left, "text/html");
+    	var parser_2 = new DOMParser();
+    	var part_2 = parser.parseFromString(test_right, "text/html");
+    	var prova = part_1.getElementsByTagName("section").children;
+    	var prov_2 = part_2.getElementsByTagName("section").children;
+    	dispiega_elementi(prova, prova_2);
+    	
+
+	}
+</script>
+<script type="text/javascript">
+		function dispiega_elementi(array_1, array_2){
+		var article = document.getElementsByTagName("article");
+		while (array_1.lenght > 0 && array_2.lenght > 0){
+			var container = document.createElement("div");
+			container.appendChild(array_1[0]);
+			container.appendChild(array_2[0]);
+			article.appendChild(container);
+			array_1.splice(0, 1);
+			array_2.splice(0, 1);
+		}
+	}
+</script>
+</head>
+<body>
+	<article class="eu_directive">
+		
+	</article>
+</body>
+</html>
