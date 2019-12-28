@@ -5,8 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="prova.css">
 	<script type="text/javascript">
 		window.onload = richiesta_array("./Direttiva_1.html", "./direttiva_2.html");
-	</script>
-	<script type="text/javascript">
 
 
 	async function richiesta_array(input_1, input_2){
@@ -21,11 +19,8 @@
     	var prova = part_1.getElementsByTagName("section").children;
     	var prov_2 = part_2.getElementsByTagName("section").children;
     	dispiega_elementi(prova, prova_2);
-    	
 
 	}
-</script>
-<script type="text/javascript">
 		function dispiega_elementi(array_1, array_2){
 		var article = document.getElementsByTagName("article");
 		while (array_1.lenght > 0 && array_2.lenght > 0){
