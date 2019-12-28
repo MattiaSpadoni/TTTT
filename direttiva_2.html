@@ -1462,9 +1462,10 @@
     	var part_1 = parser.parseFromString(test_left, "text/html");
     	var parser_2 = new DOMParser();
     	var part_2 = parser.parseFromString(test_right, "text/html");
-    	var prova = part_1.getElementsByTagName("section").children;
-    	var prov_2 = part_2.getElementsByTagName("section").children;
-    	function_2(prova, prova_2);
+    	var prova = part_1.document.getElementsByTagName("section").children;
+    	var prov_2 = part_2.document.getElementsByTagName("section").children;
+    	alert(prova, prova_2)
+    	/*function_2(prova, prova_2);*/
     	
 
 	}
