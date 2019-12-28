@@ -10,12 +10,12 @@
 	async function richiesta_array(input_1, input_2){
 		var left = await fetch(input_1);
 		var right = await  fetch(input_2);
-		var test_left = await left.text();
-		var test_right = await right.text();
+		var text_left = await left.text();
+		var text_right = await right.text();
 		var parser = new DOMParser();
-    	var part_1 = parser.parseFromString(test_left, "text/html");
+    	var part_1 = parser.parseFromString(text_left, "text/html");
     	var parser_2 = new DOMParser();
-    	var part_2 = parser_2.parseFromString(test_right, "text/html");
+    	var part_2 = parser_2.parseFromString(text_right, "text/html");
     	console.log(part_1, part_2);
     	var prova = part_1.document.getElementsByTagName("section").children;
     	var prova_2 = part_2.document.getElementsByTagName("section").children;
