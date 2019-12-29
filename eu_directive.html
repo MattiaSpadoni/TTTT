@@ -28,8 +28,8 @@
 		var counter = 0;
 		for (var i in array_1){
 			var container = document.createElement("div");
-			container.appendChild(array_1[counter]);
-			container.appendChild(array_2[counter]);
+			container.appendChild(array_1.item(counter));
+			container.appendChild(array_2.item(counter));
 			article.appendChild(container);
 			counter++;
 			console.log(counter);
