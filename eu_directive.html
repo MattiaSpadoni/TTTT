@@ -25,13 +25,12 @@
 	}
 		function dispiega_elementi(array_1, array_2){
 		var article = document.getElementById("contenitore");
-		while (array_1.length > 0 && array_2.length > 0){
+		for each (i in array_1){
+			let position = array_1.indexOf(i);
 			var container = document.createElement("div");
-			container.appendChild(array_1[0]);
-			container.appendChild(array_2[0]);
+			container.appendChild(array_1[position]);
+			container.appendChild(array_2[position]);
 			article.appendChild(container);
-			array_1.splice(0, 1);
-			array_2.splice(0, 1);
 		}
 	}
 </script>
