@@ -26,15 +26,15 @@
 		function dispiega_elementi(array_1, array_2){
 		var article = document.getElementById("contenitore");
 		var counter = -1;
-		while (array_1.length){
+		while (counter < array_1.length){
 			counter++;
-    		var container = document.createElement("div");
-    		container.appendChild(array_1.item(0));
-    		container.appendChild(array_2.item(0));
-    		article.appendChild(container);
+			var container = document.createElement("div");
+			console.log(array_1, array_2);
+			container.appendChild(array_1.item(counter).cloneNode(true));
+			container.appendChild(array_2.item(counter).cloneNode(true));
+			article.appendChild(container);
 			console.log(counter);
 		}
-	}
 </script>
 </head>
 <body>
