@@ -49,6 +49,51 @@
   					console.log(src, css);
   				}
   			}
+  			/*
+    var container = document.createElement("div");
+    container.appendChild(array_1.item(0));
+    container.appendChild(array_2.item(0));
+    article.appendChild(container);
+
+    --------------------------------------------------------
+
+    			var container = document.createElement("div");
+			console.log(array_1, array_2);
+			container.appendChild(array_1[counter].cloneNode(true));
+			container.appendChild(array_2[counter].cloneNode(true));
+			article.appendChild(container);
+			console.log(counter);
+	--------------------------------------------------------
+		async function richiesta_array(input_1, input_2){
+		var left = await fetch(input_1);
+		var right = await  fetch(input_2);
+		var text_left = await left.text();
+		var text_right = await right.text();
+		var parser = new DOMParser();
+    	var part_1 = parser.parseFromString(text_left, "text/html");
+    	var parser_2 = new DOMParser();
+    	var part_2 = parser_2.parseFromString(text_right, "text/html");
+    	console.log(part_1, part_2);
+    	var prova = part_1.getElementById("to_take").children;
+    	var prova_2 = part_2.getElementById("to_take").children;
+    	console.log(prova, prova_2);
+    	dispiega_elementi(prova, prova_2);
+
+	}
+		function dispiega_elementi(array_1, array_2){
+		var article = document.getElementById("contenitore");
+		var counter = -1;
+		while (counter < array_1.length){
+			counter++;
+			var container = document.createElement("div");
+			console.log(array_1, array_2);
+			container.appendChild(array_1.item(counter).cloneNode(true));
+			container.appendChild(array_2.item(counter).cloneNode(true));
+			article.appendChild(container);
+			console.log(counter);
+		}
+	
+*/
 		</script>
 	</head>
 	<body>

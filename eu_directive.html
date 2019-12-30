@@ -20,9 +20,7 @@
     	var prova = part_1.getElementById("to_take").children;
     	var prova_2 = part_2.getElementById("to_take").children;
     	console.log(prova, prova_2);
-    	const trasforma_1 = Array.from(prova)
-    	const trasforma_2 = Array.from(prova_2)
-    	dispiega_elementi(trasforma_1, trasforma_2);
+    	dispiega_elementi(prova, prova_2);
 
 	}
 		function dispiega_elementi(array_1, array_2){
@@ -30,11 +28,10 @@
 		var counter = -1;
 		while (counter < array_1.length){
 			counter++;
-			var container = document.createElement("div");
-			console.log(array_1, array_2);
-			container.appendChild(array_1[counter].cloneNode(true));
-			container.appendChild(array_2[counter].cloneNode(true));
-			article.appendChild(container);
+    		var container = document.createElement("div");
+    		container.appendChild(array_1.item(0));
+    		container.appendChild(array_2.item(0));
+    		article.appendChild(container);
 			console.log(counter);
 		}
 	}
