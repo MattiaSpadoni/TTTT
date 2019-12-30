@@ -29,6 +29,7 @@
 		for (var i in array_1){
 			counter++;
 			var container = document.createElement("div");
+			console.log(array_1, array_2);
 			container.appendChild(array_1.item(counter).cloneNode(true));
 			container.appendChild(array_2.item(counter).cloneNode(true));
 			article.appendChild(container);
