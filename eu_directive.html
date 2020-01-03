@@ -20,7 +20,9 @@
     	var prova = part_1.getElementsByClassName("eu_directive").children;
     	var prova_2 = part_2.getElementsByClassName("eu_directive").children;
     	console.log(prova, prova_2);
-    	dispiega_elementi(prova, prova_2);
+    	var array_left = Array.from(prova);
+    	var array_right = Array.from(prova_2);
+    	dispiega_elementi(array_left, array_right);
 
 	}
 		function dispiega_elementi(array_1, array_2){
