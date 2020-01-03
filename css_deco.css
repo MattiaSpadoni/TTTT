@@ -2,7 +2,8 @@
 /* ----- FONTS ----- */
 @font-face {
 	font-family: "hazel_deco";
-	src: url(hazel_deco/HazelDecoLight-Regular.otf);
+	src: url(hazel_deco/HazelDecoLight-Regular.otf),
+	     url(hazel_deco/HazelDecoLight-Regular.ttf);
 }
 
 @font-face {
@@ -316,3 +317,5 @@ article.eu_directive {
 	display: grid !important;
 	grid-template-columns: repeat(2, 1fr) !important;
 }
+
+
