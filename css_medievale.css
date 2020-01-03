@@ -332,7 +332,7 @@ p{
 
 /*------------------------- Eu directive additional definition ---------------------*/
 
-section.eu_directive {
+article.eu_directive {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	letter-spacing: 1px;
