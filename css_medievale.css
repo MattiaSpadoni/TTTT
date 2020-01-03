@@ -334,7 +334,7 @@ p{
 
 article.eu_directive {
 	display: grid !important;
-	grid-template-columns: repeat(2, 40%) !important;
+	grid-template-columns: repeat(2, 45%) !important;
 	letter-spacing: 1px;
 	column-count: 1 !important;
 	word-break: normal;
@@ -345,6 +345,10 @@ article.eu_directive {
 
 article.eu_directive > table {
 	width: 80%;
+}
+
+figure > table {
+	object-fit: contain;
 }
 
 
