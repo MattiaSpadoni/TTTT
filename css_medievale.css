@@ -332,28 +332,13 @@ p{
 
 /*------------------------- Eu directive additional definition ---------------------*/
 
-/*article.eu-directive{
-	display: flex;
-	flex-direction: row wrap;
-}*/
-
-section.eu-directive:nth-of-type(odd){
-	width: 49%;
+section.eu_directive {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	letter-spacing: 1px;
 	column-count: 1;
+	word-break: normal;
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-  	-moz-column-count: 1;
-  	float: left;
+  	-moz-column-count: 1; /* Firefox */
 
-}
-section.eu-directive:nth-of-type(even){
-	width: 49%;
-	column-count: 1;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-  	-moz-column-count: 1;
-  	float: right;
-
-}
-section.eu-directive > p {
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
