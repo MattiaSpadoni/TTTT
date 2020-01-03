@@ -333,12 +333,12 @@ p{
 /*------------------------- Eu directive additional definition ---------------------*/
 
 article.eu_directive {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
 	letter-spacing: 1px;
-	column-count: 1;
+	column-count: 1 !important;
 	word-break: normal;
-	-webkit-column-count: 1; /* Chrome, Safari, Opera */
-  	-moz-column-count: 1; /* Firefox */
+	-webkit-column-count: 1 !important; /* Chrome, Safari, Opera */
+  	-moz-column-count: 1 !important; /* Firefox */
 
 }
