@@ -343,5 +343,10 @@ article.eu_directive {
 
 }
 
+article.eu_directive > table {
+	width: 80%;
+}
+
+
 /*--------------prova locale con un solo documento*/
 
