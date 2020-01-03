@@ -1,0 +1,318 @@
+
+/* ----- FONTS ----- */
+@font-face {
+	font-family: "hazel_deco";
+	src: url(hazel_deco/HazelDecoLight-Regular.otf);
+}
+
+@font-face {
+	font-family: "champagne";
+	src: url(champagne_limousines/Champagne_Limousines_B.ttf);
+}
+
+@font-face {
+	font-family: "market";
+	src: url(market_deco/Market_Deco.ttf);
+}
+
+
+
+/* ----- HTML + BODY + ARTICLE + P-----*/
+html {
+	background-image: url(pattern.svg); 
+	background-size: contain;
+	background-color: #49001C;
+
+}
+
+/*malva: #900C3F*/
+/*bordeaux: #8A0023*/
+/*ordeaux ok #4D0027 --> #320000
+C*/
+
+body {
+	font-family: "champagne";
+	margin: 10% 15% 10%;
+}
+
+article {
+	text-align: justify;
+	border: 2em solid #49001C;
+	-webkit-border-image: url(frame_5.svg) 100%;
+	border-image-slice: 20%;
+	border-image-width: 6em;
+	border-spacing:
+	margin: -1em;
+	padding: 2.5em;
+	background-color: #49001C;
+	background-clip: content-box;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1.2em;
+	color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+
+
+/*----- HEADER + HEADLINES-----*/
+header {
+	text-align: center;
+	color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+h1 {
+	font-family: "hazel_deco";
+	font-size: 2em;
+	font-weight: normal;
+	color: #DFDF31;
+}
+
+h2 {
+	font-family: "market";
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 3em;
+	position: relative;
+	color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+
+h3 {
+	font-family: "hazel_deco";
+	font-weight: normal;
+
+}
+
+h4 {
+	font-family: "market";
+	font-weight: normal;
+	text-align: center;
+	margin: none;
+	position: relative;
+	color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+/*
+h4:before{
+	width: 100%;
+	height: 30px;
+	content: "";
+	background: url(divider_no.png) no-repeat center center;
+	display: block;
+	margin: 0;
+}
+
+h4:after {
+	width: 100%;
+	height: 23px;
+	content: "";
+	background: url(divider_no.png) no-repeat center center;
+	display: block;
+    padding-top: 8vmax; 
+}*/
+
+
+h5 {
+	font-family: "hazel_deco";
+	font-size: 1.2em;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+
+/*-----  ANCHORS + QUOTATIONS-----*/
+
+/*a {
+	-webkit-text-decoration: underline;
+	font-family: "market";
+
+}
+
+a:hover {
+	border-bottom: yellow;
+	text-decoration: underline;
+}*/
+
+a {
+	/* -webkit-text-fill-color: transparent;
+ 	background: -webkit-linear-gradient(transparent, transparent),         url(https://media.giphy.com/media/raJa0mPRFe8zC/giphy.gif) repeat;
+	background: -o-linear-gradient(transparent, transparent)
+	url(https://media.giphy.com/media/XPXhiM9M1AQ0/giphy.gif) repeat;
+ 	background: -o-linear-gradient(transparent, transparent);
+ 	-webkit-background-clip: text;
+ 	text-decoration: underline; */
+ 	-webkit-text-decoration: underline !important;
+
+}
+
+a:hover {
+	-webkit-text-fill-color: transparent;
+ 	background: -webkit-linear-gradient(transparent, transparent),         url(https://media.giphy.com/media/raJa0mPRFe8zC/giphy.gif) repeat;
+	background: -o-linear-gradient(transparent, transparent)
+	url(https://media.giphy.com/media/XPXhiM9M1AQ0/giphy.gif) repeat;
+ 	background: -o-linear-gradient(transparent, transparent);
+ 	-webkit-background-clip: text;
+}
+
+q {
+	font-style: italic;
+	text-align: center;
+	display: inline-block;	
+	border: 1em solid #FFDF8A;
+	-webkit-border-image: url(cornice_didascalie_viola.svg) 100%;
+	border-image-slice: 20%;
+	border-image-width: 2em;
+	padding: 1em;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+
+}
+
+
+/*----- FIGURES -----*/
+figure{
+	float: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: top;
+}
+
+img {
+	display: block;
+	max-width: 40vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	padding: 0.3em;
+	border: 0.1em solid #FFDF8A;
+}
+
+figcaption {
+	max-width: 40vw;
+	display: block;
+	margin: auto;
+	text-align: center;
+	border: 1em solid #FFDF8A;
+	-webkit-border-image: url(cornice_didascalie_viola.svg) 100%;
+	border-image-slice: 20%;
+	border-image-width: 2em;
+	padding: 1em;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+}
+
+
+
+/*----- TABLES -----*/
+table {
+	text-align: center;
+	display: block;
+	max-width: 50vw;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+
+}
+
+th {
+	font-family: "market";
+	font-size: 1.5em;
+	height: 2em;
+	padding: 0.5em;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid #FFDF8A;
+
+}
+
+td {
+	height: 1.8em;
+	padding: 0.5em;
+}
+
+
+
+/*----- LISTS -----*/
+ul, ol {
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    list-style: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+}
+
+ul {
+	list-style-type: square;
+	color: #c3a343;
+}
+
+ol {
+	list-style-type: upper-roman;
+	color: #c3a343;
+}
+
+/*----- FOOTER -----*/
+footer {
+	text-align: center;
+}
+
+footer:before {
+	width: 100%;
+	height: 0.1rem;
+	content: "";
+	display: block;
+	margin: 0;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+}
+
+/*------------------------- Eu directive additional definition ---------------------*/
+
+article.eu_directive {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+}
