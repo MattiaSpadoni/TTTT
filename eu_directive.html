@@ -28,11 +28,13 @@
 		var counter = -1;
 		while (counter < array_1.length){
 			counter++;
-			var container = document.createElement("div");
+			/*var container = document.createElement("div");*/
 			console.log(array_1, array_2);
-			container.appendChild(array_1.item(counter).cloneNode(true));
+			/*container.appendChild(array_1.item(counter).cloneNode(true));
 			container.appendChild(array_2.item(counter).cloneNode(true));
-			article.appendChild(container);
+			article.appendChild(container);*/
+			article.appendChild(array_1.item(counter).cloneNode(true));
+			article.appendChild(array_2.item(counter).cloneNode(true));
 			console.log(counter);
 		}
 	}
