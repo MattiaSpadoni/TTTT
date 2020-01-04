@@ -708,9 +708,9 @@ article.eu_directive > h4:nth-of-type(even), h5:nth-of-type(even), h6:nth-of-typ
 	border-radius: 20px;
 	background-color: rgba(204, 204, 255,0.5) !important;
 	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_1;
+  	animation-name: animation_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
