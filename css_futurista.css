@@ -156,6 +156,7 @@ h1, h2, h3, h5 {
 p, figcaption, h4, h6, table, q, li {
 	font-family: "text";
 	word-break: normal;
+	margin: 2%;
 }
 
 
@@ -486,7 +487,21 @@ p, li{
 
 
 
-/*-----------------------------------------------------*/
+/*------------------------EU-DIRECTIVE---------------------------*/
+
+
+article.eu_directive {
+	display: grid !important;
+	grid-template-columns: repeat(2, 45%) !important;
+	letter-spacing: 1px;
+	column-count: 1 !important;
+	word-break: normal;
+	-webkit-column-count: 1 !important; /* Chrome, Safari, Opera */
+  	-moz-column-count: 1 !important; /* Firefox */
+  	word-break: break-all;
+
+}
+
 
 
 
