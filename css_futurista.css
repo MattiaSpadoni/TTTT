@@ -560,7 +560,7 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 }
 
 article.eu_directive > ul:nth-of-type(odd):hover, ol:nth-of-type(odd):hover{
-	background-color: rgb(128, 128, 255) !important;
+	background-color: rgb(193, 128, 255) !important;
 }
 
 article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
