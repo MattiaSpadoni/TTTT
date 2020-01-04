@@ -548,7 +548,7 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
   	border-width: 7px;
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
-	background-color: rgba(204, 204, 255,0.5) !important;
+	background-color: rgba(217, 179, 255, 0.5);
 	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_1;
