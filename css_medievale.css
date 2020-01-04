@@ -348,7 +348,8 @@ article.eu_directive > table {
 }
 
 figure > table {
-	object-fit: contain;
+	table-layout: fixed;
+	width: 100%;
 }
 
 
