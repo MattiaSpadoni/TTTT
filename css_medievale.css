@@ -340,6 +340,7 @@ article.eu_directive {
 	word-break: normal;
 	-webkit-column-count: 1 !important; /* Chrome, Safari, Opera */
   	-moz-column-count: 1 !important; /* Firefox */
+  	word-break: break-all;
 
 }
 
@@ -347,7 +348,7 @@ article.eu_directive > table {
 	width: 80%;
 }
 
-figure > table {
+table {
 	table-layout: fixed;
 	width: 100%;
 }
