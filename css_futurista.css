@@ -419,6 +419,21 @@ h5 {
 	from{margin-left: 50%;}
 	to{margin-left: 25%;}
 }
+@keyframes table_animation{
+
+	from{margin-right: 50%;}
+	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 0%;}
+}
+@-webkit-keyframes table_animation{
+
+	from{margin-right: 50%;}
+	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 0%;}
+}
+
 /*------------------------------------------------------*/
 
 
@@ -501,7 +516,7 @@ p, li{
 
 
 
-/*------------------------EU-DIRECTIVE---------------------------*/
+/*------------------------EU-DIRECTIVE-grid---------------------------*/
 
 
 article.eu_directive {
@@ -516,7 +531,7 @@ article.eu_directive {
 
 }
 
-
+/*------------------------EU-DIRECTIVE-lists---------------------------*/
 
 article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 	display: inline-block;
@@ -537,6 +552,36 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
   	animation-fill-mode: forwards;
   	border-radius: 20px;
 }
+
+article.eu_directive > ul:nth-of-type(odd):hover, ol:nth-of-type(odd):hover{
+	background-color: rgb(128, 128, 255) !important;
+}
+
+article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
+	display: inline-block;
+	padding: 3%;
+	margin: 0px;
+	border-style: solid;
+  	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	animation-fill-mode: forwards;
+  	border-radius: 20px;
+}
+
+article.eu_directive > ol:nth-of-type(even):hover, ul:nth-of-type(even):hover {
+	background-color: rgb(128, 128, 255) !important;
+}
+
+/*-------------------- EU directive paragraphs ----------------*/
 
 article.eu_directive > p{
 	display: inline-block;
@@ -589,26 +634,8 @@ article.eu_directive > p:nth-of-type(even):hover{
 
   }
 
+/*----------------- Eu directive- h1-h2-h3 ----------------------*/
 
-article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
-	display: inline-block;
-	padding: 3%;
-	margin: 0px;
-	border-style: solid;
-  	border-width: 7px;
-	border-color: rgb(153, 204, 255);
-	border-radius: 20px;
-	background-color: rgba(204, 204, 255,0.5) !important;
-	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
-  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
-  	animation-duration: 3s;
-  	animation-delay: 2s;
-  	-webkit-animation-delay:2s;
-  	-moz-animation-delay: 2s;
-  	animation-fill-mode: forwards;
-  	border-radius: 20px;
-}
 
 article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-type(even) {
 	border-style: solid;
@@ -627,17 +654,6 @@ article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-typ
 } 
 article.eu_directive > h1:nth-of-type(even): hover, h2:nth-of-type(even):hover, h3:nth-of-type(even):hover{
 	background-color: rgba(255, 255, 255, 0.45);
-}
-figure > table:nth-of-type(even) {
-	word-break: break-all !important;
-	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
-  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
-  	animation-duration: 3s;
-  	animation-delay: 2s;
-  	-webkit-animation-delay:2s;
-  	-moz-animation-delay: 2s;
-  	animation-fill-mode: forwards;
 }
 
 
@@ -662,8 +678,15 @@ article.eu_directive > h1:nth-of-type(odd): hover, h2:nth-of-type(odd):hover, h3
 }
 
 
-figure > table:nth-of-type(odd) {
-	word-break: break-all !important;
+/*-------------------------- Eu directive- h4, h5, h6 ------------------*/
+
+article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(odd) {
+	border-style: solid;
+	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(217, 179, 255, 0.5);
+	animation-fill-mode: forwards;
 	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_1;
@@ -671,10 +694,14 @@ figure > table:nth-of-type(odd) {
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
   	-moz-animation-delay: 2s;
-  	animation-fill-mode: forwards;
 }
 
-article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(odd) {
+article.eu_directive > h4:nth-of-type(odd):hover, h5:nth-of-type(odd):hover, h6:nth-of-type(odd):hover {
+	background-color: rgb(193, 128, 255) !important;
+}
+
+
+article.eu_directive > h4:nth-of-type(even), h5:nth-of-type(even), h6:nth-of-type(even) {
 	border-style: solid;
 	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -690,9 +717,83 @@ article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(
   	-moz-animation-delay: 2s;
 }
 
-article.eu_directive > h4:nth-of-type(odd):hover, h5:nth-of-type(odd):hover, h6:nth-of-type(odd):hover {
-	background-color: rgb(255, 255, 179);
+article.eu_directive > h4:nth-of-type(even):hover, h5:nth-of-type(even):hover, h6:nth-of-type(even):hover {
+	background-color: rgb(128, 128, 255) !important;
 }
+
+
+/*------------------------------- Eu directive figures and tables ----------------------*/
+
+
+article.eu_directive > figure:nth-of-type(even) {
+text-align: justify;
+	height: auto;
+	background-color: rgba(217, 179, 255, 0.5);
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+
+  	}
+article.eu_directive > figure:nth-of-type(even):hover {
+	background-color: rgb(128, 128, 255) !important;
+}
+
+
+article.eu_directive > figure:nth-of-type(odd) {
+text-align: justify;
+	height: auto;
+	background-color: rgba(217, 179, 255, 0.5);
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+
+  	}
+article.eu_directive > figure:nth-of-type(odd):hover {
+	background-color: rgb(193, 128, 255) !important;
+}
+
+figure > table:nth-of-type(odd) {
+	word-break: break-all !important;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	animation-fill-mode: forwards;
+}
+
+
+figure > table:nth-of-type(even) {
+	word-break: break-all !important;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	animation-fill-mode: forwards;
+  	background-color: rgba(204, 204, 255, 0.5);
+}
+
+figure > table {
+	font-size: 10px;
+}
+
 
 
 
