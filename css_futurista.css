@@ -808,5 +808,54 @@ figure > table {
 }
 
 
+/*-----------------------Eu Directive footer ---------------------*/
+
+article.eu_directive > footer:nth-of-type(even) {
+
+	display: inline-block;
+	text-align: justify;
+	height: auto;
+	background-color: rgba(204, 204, 255, 0.5);
+  	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	
+}
+article.eu_directive > footer:nth-of-type(even):hover{
+	background-color: rgb(128, 128, 255) !important;
+
+  }
+
+
+
+article.eu_directive > footer:nth-of-type(odd) {
+	display: inline-block;
+	text-align: justify;
+	height: auto;
+	background-color: rgba(217, 179, 255, 0.5);
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+
+}
+
+article.eu_directive > footer:nth-of-type(odd):hover{
+	background-color: rgb(193, 128, 255) !important;
+
+  }
+
+
+
 
 
