@@ -542,7 +542,7 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 	display: inline-block;
 	padding: 3%;
 	margin: 0px;
-	margin: 2%;
+	padding: 2%;
 	font-size: 10px;
 	border-style: solid;
   	border-width: 7px;
@@ -568,7 +568,7 @@ article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
 	display: inline-block;
 	padding: 3%;
 	margin: 0px;
-	margin: 2%;
+	padding: 2%;
 	font-size: 10px;
 	border-style: solid;
   	border-width: 7px;
