@@ -575,9 +575,9 @@ article.eu_directive > p:nth-of-type(even){
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
   	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
+  	animation-name: animation_1;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
