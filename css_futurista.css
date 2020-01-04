@@ -575,9 +575,9 @@ article.eu_directive > p:nth-of-type(even){
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
   	animation-fill-mode: forwards;
-	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_1;
+  	animation-name: animation_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -628,6 +628,17 @@ article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-typ
 article.eu_directive > h1:nth-of-type(even): hover, h2:nth-of-type(even):hover, h3:nth-of-type(even):hover{
 	background-color: rgba(255, 255, 255, 0.45);
 }
+article.eu_directive > table:nth-of-type(even) {
+	word-break: break-all !important;
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_2;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	animation-fill-mode: forwards;
+}
 
 
 article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(odd) {
@@ -636,9 +647,9 @@ article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.35);
-	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_1;
+  	animation-name: animation_2;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -649,5 +660,39 @@ article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(
 article.eu_directive > h1:nth-of-type(odd): hover, h2:nth-of-type(odd):hover, h3:nth-of-type(odd):hover{
 	background-color: rgba(255, 255, 255, 0.45);
 }
+
+
+article.eu_directive > table:nth-of-type(odd) {
+	word-break: break-all !important;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+  	animation-fill-mode: forwards;
+}
+
+article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(odd) {
+	border-style: solid;
+	border-width: 7px;
+	border-color: rgb(153, 204, 255);
+	border-radius: 20px;
+	background-color: rgba(204, 204, 255,0.5) !important;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+  	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  	animation-name: animation_1;
+  	animation-duration: 3s;
+  	animation-delay: 2s;
+  	-webkit-animation-delay:2s;
+  	-moz-animation-delay: 2s;
+}
+
+article.eu_directive > h4:nth-of-type(odd):hover, h5:nth-of-type(odd):hover, h6:nth-of-type(odd):hover {
+	background-color: rgb(255, 255, 179);
+}
+
 
 
