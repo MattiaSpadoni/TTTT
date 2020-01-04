@@ -734,10 +734,11 @@ text-align: justify;
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_2;
   	animation-duration: 3s;
-
+  	border-radius: 20px;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
   	-moz-animation-delay: 2s;
+  	border-color: rgb(153, 204, 255);
 
   	}
 article.eu_directive > figure:nth-of-type(even):hover {
@@ -754,10 +755,11 @@ text-align: justify;
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
   	animation-name: animation_1;
   	animation-duration: 3s;
-
+  	border-radius: 20px;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
   	-moz-animation-delay: 2s;
+  	border-color: rgb(153, 204, 255);
 
   	}
 article.eu_directive > figure:nth-of-type(odd):hover {
@@ -766,9 +768,10 @@ article.eu_directive > figure:nth-of-type(odd):hover {
 
 figure > table:nth-of-type(odd) {
 	word-break: break-all !important;
-	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
+	border-radius: 20px;
+	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_1;
+  	animation-name: animation_table;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -779,9 +782,10 @@ figure > table:nth-of-type(odd) {
 
 figure > table:nth-of-type(even) {
 	word-break: break-all !important;
-	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+	border-radius: 20px;
+	-webkit-animation-name: animation_table; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
+  	animation-name: animation_table;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
