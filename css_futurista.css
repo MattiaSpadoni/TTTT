@@ -812,6 +812,13 @@ figure > table {
 
 /*-----------------------Eu Directive footer ---------------------*/
 
+
+article.eu_directive > footer{
+	border-style: solid;
+	border-radius: 20px;
+	border-color: rgb(153, 204, 255);
+}
+
 article.eu_directive > footer:nth-of-type(even) {
 
 	display: inline-block;
@@ -832,8 +839,6 @@ article.eu_directive > footer:nth-of-type(even):hover{
 	background-color: rgb(128, 128, 255) !important;
 
   }
-
-
 
 article.eu_directive > footer:nth-of-type(odd) {
 	display: inline-block;
