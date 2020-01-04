@@ -628,7 +628,7 @@ article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-typ
 article.eu_directive > h1:nth-of-type(even): hover, h2:nth-of-type(even):hover, h3:nth-of-type(even):hover{
 	background-color: rgba(255, 255, 255, 0.45);
 }
-article.eu_directive > table:nth-of-type(even) {
+figure > table:nth-of-type(even) {
 	word-break: break-all !important;
 	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
@@ -647,9 +647,9 @@ article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(
 	border-color: rgb(153, 204, 255);
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.35);
-	-webkit-animation-name: animation_2; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-  	animation-name: animation_2;
+  	animation-name: animation_1;
   	animation-duration: 3s;
   	animation-delay: 2s;
   	-webkit-animation-delay:2s;
@@ -662,7 +662,7 @@ article.eu_directive > h1:nth-of-type(odd): hover, h2:nth-of-type(odd):hover, h3
 }
 
 
-article.eu_directive > table:nth-of-type(odd) {
+figure > table:nth-of-type(odd) {
 	word-break: break-all !important;
 	-webkit-animation-name: animation_1; /* Safari 4.0 - 8.0 */
   	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
