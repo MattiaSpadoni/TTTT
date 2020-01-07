@@ -318,4 +318,8 @@ article.eu_directive {
 	grid-template-columns: repeat(2, 1fr) !important;
 }
 
+article.eu_directive {
+	word-break: break-all;
+}
+
 
