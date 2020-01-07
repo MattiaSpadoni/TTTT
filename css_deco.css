@@ -315,7 +315,7 @@ footer:before {
 
 article.eu_directive {
 	display: grid !important;
-	grid-template-columns: repeat(2, 1fr) !important;
+	grid-template-columns: repeat(2, 50%) !important;
 	word-break: break-all;
 }
 
@@ -331,7 +331,7 @@ article.eu_directive > h6:nth-of-type(odd),
 article.eu_directive > figure:nth-of-type(odd),
 article.eu_directive > footer:nth-of-type(odd), 
 figure > table:nth-of-type(odd) {
-	padding-right: 1em;
+	padding-right: 0.5em;
 
 }
 
@@ -347,7 +347,7 @@ article.eu_directive > h6:nth-of-type(even),
 article.eu_directive > figure:nth-of-type(even),
 article.eu_directive > footer:nth-of-type(even), 
 figure > table:nth-of-type(even) {
-	padding-left: 1em;
+	padding-left: 0.5em;
 
 }
 
