@@ -6,14 +6,15 @@ fonts
 
 @font-face{
 	font-family: "title";
-	src: url(font/communism/SovietProgram.eot),
-		 url(font/communism/SovietProgram.ttf);
+	src: url(font/futuristic/zero_hour.eot),
+		 url(font/futuristic/zero_hour.ttf);
 
 }
 @font-face{
 	font-family: "text";
-	src: url(font/communism/molot.eot),
-		 url(font/communism/molot.otf);
+	src: url(font/futuristic/neuropol.eot),
+		 url(font/futuristic/neuropol.ttf),
+		 url(font/futuristic/neuropol.otf);
 
 }
 body{
