@@ -1,0 +1,30 @@
+/*----css di prova per documentazione --*/
+
+body {
+
+}
+.row{
+	margin-top: 2%;
+	text-align: justify;
+}
+
+.container {
+	margin: 7.5% 2% 7.5% 2%;
+
+}
+
+#separator_0 {
+	background-color: brown;
+}
+#separator_1 {
+	background-color: red;
+}
+#separator_2 {
+	background-color: yellow;
+}
+#separator_3 {
+	background-color: green;
+}
+#separator_4 {
+	background-color: blue;
+}
