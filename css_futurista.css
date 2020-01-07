@@ -645,7 +645,7 @@ article.eu_directive > p:nth-of-type(even):hover{
 /*----------------- Eu directive- h1-h2-h3 ----------------------*/
 
 
-article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-type(even) {
+article.eu_directive > h1:nth-of-type(even), article.eu_directive > h2:nth-of-type(even), article.eu_directive > h3:nth-of-type(even) {
 	border-style: solid;
 	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -660,12 +660,12 @@ article.eu_directive > h1:nth-of-type(even), h2:nth-of-type(even), h3:nth-of-typ
   	-moz-animation-delay: 2s;
   	animation-fill-mode: forwards;
 } 
-article.eu_directive > h1:nth-of-type(even): hover, h2:nth-of-type(even):hover, h3:nth-of-type(even):hover{
+article.eu_directive > h1:nth-of-type(even): hover, article.eu_directive > h2:nth-of-type(even):hover, article.eu_directive > h3:nth-of-type(even):hover{
 	background-color: rgba(255, 255, 255, 0.45);
 }
 
 
-article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(odd) {
+article.eu_directive > h1:nth-of-type(odd), article.eu_directive > h2:nth-of-type(odd), article.eu_directive > h3:nth-of-type(odd) {
 	border-style: solid;
 	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -681,14 +681,14 @@ article.eu_directive > h1:nth-of-type(odd), h2:nth-of-type(odd), h3:nth-of-type(
   	animation-fill-mode: forwards;
 } 
 
-article.eu_directive > h1:nth-of-type(odd): hover, h2:nth-of-type(odd):hover, h3:nth-of-type(odd):hover{
+article.eu_directive > h1:nth-of-type(odd): hover, article.eu_directive > h2:nth-of-type(odd):hover, article.eu_directive > h3:nth-of-type(odd):hover{
 	background-color: rgba(255, 255, 255, 0.45);
 }
 
 
 /*-------------------------- Eu directive- h4, h5, h6 ------------------*/
 
-article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(odd) {
+article.eu_directive > h4:nth-of-type(odd), article.eu_directive > h5:nth-of-type(odd), article.eu_directive > h6:nth-of-type(odd) {
 	border-style: solid;
 	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -704,12 +704,12 @@ article.eu_directive > h4:nth-of-type(odd), h5:nth-of-type(odd), h6:nth-of-type(
   	-moz-animation-delay: 2s;
 }
 
-article.eu_directive > h4:nth-of-type(odd):hover, h5:nth-of-type(odd):hover, h6:nth-of-type(odd):hover {
+article.eu_directive > h4:nth-of-type(odd):hover, article.eu_directive > h5:nth-of-type(odd):hover, article.eu_directive > h6:nth-of-type(odd):hover {
 	background-color: rgb(193, 128, 255) !important;
 }
 
 
-article.eu_directive > h4:nth-of-type(even), h5:nth-of-type(even), h6:nth-of-type(even) {
+article.eu_directive > h4:nth-of-type(even), article.eu_directive > h5:nth-of-type(even), article.eu_directive > h6:nth-of-type(even) {
 	border-style: solid;
 	border-width: 7px;
 	border-color: rgb(153, 204, 255);
@@ -725,7 +725,7 @@ article.eu_directive > h4:nth-of-type(even), h5:nth-of-type(even), h6:nth-of-typ
   	-moz-animation-delay: 2s;
 }
 
-article.eu_directive > h4:nth-of-type(even):hover, h5:nth-of-type(even):hover, h6:nth-of-type(even):hover {
+article.eu_directive > h4:nth-of-type(even):hover, article.eu_directive > h5:nth-of-type(even):hover, article.eu_directive > h6:nth-of-type(even):hover {
 	background-color: rgb(128, 128, 255) !important;
 }
 
@@ -834,7 +834,7 @@ article.eu_directive > footer:nth-of-type(even) {
   	-moz-animation-delay: 2s;
   	
 }
-article.eu_directive > footer:nth-of-type(even):hover{
+article.eu_directive > footer:nth-of-type(even):hover {
 	background-color: rgb(128, 128, 255) !important;
 
   }
