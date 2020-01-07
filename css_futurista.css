@@ -367,14 +367,14 @@ h5 {
 @keyframes animation_1{
 
 	from{margin-right: 50%;}
-	to{margin-right: 25%;}
+	to{margin-right: 15%;}
 	from{margin-left: 50%;}
 	to{margin-left: 5%;}
 }
 @-webkit-keyframes animation_1{
 
 	from{margin-right: 50%;}
-	to{margin-right: 25%;}
+	to{margin-right: 15%;}
 	from{margin-left: 50%;}
 	to{margin-left: 5%;}
 }
@@ -383,7 +383,7 @@ h5 {
 	from{margin-right: 50%;}
 	to{margin-right: 5%;}
 	from{margin-left: 50%;}
-	to{margin-left: 25%;}
+	to{margin-left: 15%;}
 
 }
 @-webkit-keyframes animation_2{
@@ -391,15 +391,15 @@ h5 {
 	from{margin-right: 50%;}
 	to{margin-right: 5%;}
 	from{margin-left: 50%;}
-	to{margin-left: 25%;}
+	to{margin-left: 15%;}
 
 }
 @keyframes animation_3{
 
 	from{margin-right: 50%;}
-	to{margin-right: 30%;}
+	to{margin-right: 20%;}
 	from{margin-left: 50%;}
-	to{margin-left: 30%;}
+	to{margin-left: 20%;}
 
 }
 @-webkit-keyframes animation_3{
