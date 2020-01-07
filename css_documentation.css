@@ -28,3 +28,13 @@ body {
 #separator_4 {
 	background-color: blue;
 }
+
+h1 {
+	text-align: center;
+	color: red;
+}
+
+.about {
+	margin-right: 25%;
+	margin-left: 25%;
+}
