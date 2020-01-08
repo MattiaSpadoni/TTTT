@@ -4,7 +4,14 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="prova.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>Typo</title>
 		<script type="text/javascript">
+
+			function simply_src(input){
+				var src = input.id;
+				var iframe_content = document.getElementById("first");
+				iframe_content.setAttribute("src", src);
+			}
 
   			function change_css(input){
   				var css = "";
@@ -103,7 +110,7 @@
 		<header class="blog-header py-3">
 			<div class="row flex-nowrap justify-content-between align-items-center">
 				<div class="col-4 pt-1">
-					<a href="#">Documentation</a>
+					<a href="#" id= "documentation.html" onclick="simply_src(this)">Documentation</a>
 				</div>
 				<div class="col-4 text-center">
         			<a class="blog-header-logo text-dark" href="#"><img src="typo.png" class="img-fluid"></a>
@@ -112,9 +119,8 @@
 		          <a class="text-muted" href="#">
 		          	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 	        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          				<a class="dropdown-item" href="#">Art #1</a>
-	          				<a class="dropdown-item" href="#">Art #2</a>
-	          				<a class="dropdown-item" href="#">Art #3</a>
+	          				<a class="dropdown-item" href="#" id= "disclaimer.html" onclick="simply_src(this)">Disclaimer</a>
+	          				<a class="dropdown-item" href="#" id= "about.html" onclick="simply_src(this)">About us</a>
 	       				</div>
 		           </a>
 		        </div>
@@ -126,12 +132,12 @@
 			    		1500
 			    	</button>
 			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-			    		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</a>
-		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</a>
-		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</a>
-		       			<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</a>
-		       			<a class="dropdown-item" href="#" name="css_medievale.css" id="eu_directive.html" onclick="change_css(this)">Art #6</a>
+			    		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_1.html" onclick="change_css(this)">Japan’s Prisons Are a Haven for Elderly Women</a>
+		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">The Cut: Maybe She Had So Much Money She Just Lost Track of It</a>
+		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_3.html" onclick="change_css(this)">Harpers: As Goes the South, so Goes the Nation</a>
+		          		<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_4.html" onclick="change_css(this)">Times Literary Supplement: God is in the machine</a>
+		       			<a class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_5.html" onclick="change_css(this)">Huffington Post: Jerry and Marge Go Large</a>
+		       			<a class="dropdown-item" href="#" name="css_medievale.css" id="eu_directive.html" onclick="change_css(this)">EUDirective: Directive 2009/41/EC</a>
 		       		</div>
 	       		</div>
 		    	<div class="dropdown">
@@ -139,12 +145,12 @@
 			    		1920
 			    	</button>
 			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-		       			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</a>
-	         			<a class="dropdown-item" href="#" name="css_deco.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	        			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_deco.css" id="eu_directive.html" onclick="change_css(this)">Art #6</a>
+		       			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_1.html" onclick="change_css(this)">Japan’s Prisons Are a Haven for Elderly Women</a>
+	         			<a class="dropdown-item" href="#" name="css_deco.css" id="vitali_2.html" onclick="change_css(this)">The Cut: Maybe She Had So Much Money She Just Lost Track of It</a>
+	        			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_3.html" onclick="change_css(this)">Harpers: As Goes the South, so Goes the Nation</a>
+	          			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_4.html" onclick="change_css(this)">Times Literary Supplement: God is in the machine</a>
+	          			<a class="dropdown-item" href="#" name="css_deco.css" id="Vitali_5.html" onclick="change_css(this)">Huffington Post: Jerry and Marge Go Large</a>
+	          			<a class="dropdown-item" href="#" name="css_deco.css" id="eu_directive.html" onclick="change_css(this)">EUDirective: Directive 2009/41/EC</a>
 	       			</div>
 	       		</div>
 	       		<div class="dropdown">
@@ -152,12 +158,12 @@
 			    		1980
 			    	</button>
 			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_80.css" id="eu_directive.html" onclick="change_css(this)">Art #6</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_1.html" onclick="change_css(this)">Japan’s Prisons Are a Haven for Elderly Women</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="vitali_2.html" onclick="change_css(this)">The Cut: Maybe She Had So Much Money She Just Lost Track of It</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_3.html" onclick="change_css(this)">Harpers: As Goes the South, so Goes the Nation</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_4.html" onclick="change_css(this)">Times Literary Supplement: God is in the machine</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="Vitali_5.html" onclick="change_css(this)">Huffington Post: Jerry and Marge Go Large</a>
+	          			<a class="dropdown-item" href="#" name="css_80.css" id="eu_directive.html" onclick="change_css(this)">EUDirective: Directive 2009/41/EC</a>
 	       			</div>
 	       		</div>
 	       		<div class="dropdown">
@@ -165,12 +171,12 @@
 			    		2050
 			    	</button>
 			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)">Art #6</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_1.html" onclick="change_css(this)">Japan’s Prisons Are a Haven for Elderly Women</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">The Cut: Maybe She Had So Much Money She Just Lost Track of It</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_3.html" onclick="change_css(this)">Harpers: As Goes the South, so Goes the Nation</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_4.html" onclick="change_css(this)">Times Literary Supplement: God is in the machine</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="Vitali_5.html" onclick="change_css(this)">Huffington Post: Jerry and Marge Go Large</a>
+	          			<a class="dropdown-item" name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)">EUDirective: Directive 2009/41/EC</a>
 	       			</div>	
 	       		</div>
 		    </div>
