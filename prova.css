@@ -1,14 +1,17 @@
-@media (max-width:305px){
+@media (max-width:305px) {
 		.btn-group-toggle{
 		padding-top:5px;
-		}
-@media (max-width:250px){
+}
+}
+
+@media (max-width:250px) {
 		.btn-group-toggle{
 		flex-flow: column wrap;
-		}
+}
+}
 
 
-@font-face{
+@font-face {
 	font-family: "impact";
 	src: url(font/Impact Label Reversed.ttf);
 }
