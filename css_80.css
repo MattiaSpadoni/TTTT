@@ -1,0 +1,276 @@
+/*----- FONTS -----*/
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+
+@font-face {
+	font-family: "stream";
+	src: url(font/80/Streamster.ttf);
+}
+
+@font-face {
+	font-family: "lazer";
+	src: url(font/80/lazer84.ttf);
+}
+
+@font-face {
+	font-family: "tall";
+	src: url(font/80/Tall.ttf);
+}
+
+@font-face {
+	font-family: "wideout";
+	src: url(font/80/WideOutline.otf);
+}
+
+/* ----- HTML + BODY + ARTICLE + P -----*/
+html {
+    background-image: url('https://media.giphy.com/media/3o7qDTjU5TVYQc6Z20/giphy.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+body {
+	border: 0.2rem solid #fff;
+	border-radius: 3rem;
+	box-shadow:
+	0 0 0.1vw #fff,
+    0 0 0.4vw #fff,
+    0 0 1vw #fff,
+    0 0 1.5vw #ff00f7,
+    0 0 2vw #ff00f7,
+    0 0 2.5vw #ff00f7,
+    0 0 4vw #ff00f7,
+    0 0 6vw #ff00f7,
+
+    inset 0 0 0.1vw #fff,
+    inset 0 0 0.4vw #fff,
+    inset 0 0 1vw #fff,
+    inset 0 0 1.5vw #ff00f7,
+    inset 0 0 2vw #ff00f7,
+    inset 0 0 3vw #ff00f7,
+    inset 0 0 5vw #ff00f7; 
+    margin: 7vw;
+    padding: 4vw;
+    font-family: 'Abel', sans-serif;
+    color: #ffb459;
+    text-align: justify;
+    position: absolute;
+
+
+}
+
+
+
+/* ----- HEADER + HEADLINES -----*/
+
+h1 {
+	font-family: "stream";
+	text-align: center;
+	transform: rotate(-5deg);
+	background-size: cover;
+	letter-spacing: 0.3rem;
+	padding-top: 1rem;
+	color: #fff;
+    text-shadow:
+    0 0 3vw #fff,
+    0 0 6vW #fff,
+    0 0 24vw #ff00f7,
+    0 0 48vW #ff00f7,
+    0 0 54vw #ff00f7,
+    0 0 60vw #ff00f7;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: "lazer";
+	text-align: center;
+	background: -webkit-linear-gradient(#ff8c00, #ea00ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 3em;
+	letter-spacing: 0.3rem;
+
+	/*text-shadow: .1em .1em rgba(0,0,0,0.2);*/
+}
+
+h3 {
+	font-family: "stream";
+	text-align: center;
+	font-size: 2em;
+	transform: rotate(-5deg);
+	color: #ea00ff;
+	letter-spacing: 0.1rem;
+	text-shadow: 0.3rem 0.3rem 0 black;
+	margin-bottom: 1.5em;
+}
+
+h4 {
+	font-family: "wideout";
+	background: -webkit-linear-gradient(#ff8c00, #ea00ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 1.5rem;
+	display: block;
+
+}
+
+h5 {
+	font-size: 2em;
+	text-align: center;
+	font-family: "tall";
+	letter-spacing: .5rem;
+	color: #ff8c00;
+	text-shadow: 0.2rem 0.2rem 0 black;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+
+/*----- ANCHOR + QUOTATIONS -----*/
+a:hover {
+  color: hotPink;
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+  a {
+    background-color: #ea00ff;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+
+  }
+  a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
+q {
+	font-family: "stream";
+	display: inline-block;
+	text-align: center;
+	font-size: 2em;
+	transform: rotate(-1deg);
+	color: #ea00ff;
+	letter-spacing: 0.1rem;
+	text-shadow: 0.3rem 0.3rem 0 black;
+
+}
+
+
+/*----- FIGURES -----*/
+figure {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: top;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+img {
+	display: inline;
+	max-width: 40vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0.2rem solid #fff;
+	border-radius: 1rem;
+	box-shadow:
+	0 0 .1vw #fff,
+    0 0 .4vw #fff,
+    0 0 .8vw #fff,
+    0 0 1vw #ff00f7,
+    0 0 1.2vw #ff00f7,
+    0 0 1.4vw #ff00f7,
+    0 0 1.8vw #ff00f7,
+    0 0 2vw #ff00f7; 
+    float: left;
+}
+
+figcaption {
+	max-width: 40vw;
+	display: inline-block;
+	margin: auto;
+	font-family: "tall";
+	/*background: -webkit-linear-gradient(#ff8c00, #ea00ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: #ff8c00;
+	letter-spacing: 0.1rem;
+	text-shadow: 0.2rem 0.2rem 0 black;
+	font-size: 2rem;
+	text-align: justify;
+	object-fit: contain;
+	float: left;
+}
+
+
+
+/*----- TABLE -----*/
+table, th, td {
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	box-shadow: 
+	0 0 .1vw #fff,
+    0 0 .2vW #fff,
+    0 0 .3vw #ff00f7,
+    0 0 .4vW #ff00f7,
+    0 0 .5vw #ff00f7,
+    0 0 .6vw #ff00f7,
+
+    inset 0 0 .1vw #fff,
+    inset 0 0 .2vw #fff,
+    inset 0 0 .3vw #fff,
+    inset 0 0 .4vw #ff00f7,
+    inset 0 0 .5vw #ff00f7,
+    inset 0 0 .6vw #ff00f7; 
+
+}
+
+th {
+	font-family: "lazer";
+	font-size: 2em;
+	height: 2em;
+	padding: 0.5em;
+	letter-spacing: .2em;
+	background: -webkit-linear-gradient(#ff8c00, #ea00ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+td {
+	height: 1.8em;
+	padding: 0.5em;
+}
+
+
+
+/*----- LIST -----*/
+ul, ol {
+	font-weight: bold;
+	letter-spacing: .09em;
+	text-shadow: 0.3rem 0.2rem 0 black;
+}
+
+
+/*----- FOOTER -----*/
+footer {
+	text-align: center;
+}
+
+
+/*------------------------- Eu directive additional definition ---------------------*/
+
+article.eu_directive {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+}

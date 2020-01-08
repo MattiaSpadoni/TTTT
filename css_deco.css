@@ -2,17 +2,17 @@
 /* ----- FONTS ----- */
 @font-face {
 	font-family: "champagne";
-	src: url(champagne_limousines/Champagne_Limousines_B.ttf);
+	src: url(font/deco/Champagne_Limousines_B.ttf);
 }
 
 @font-face {
 	font-family: "market";
-	src: url(market_deco/Market_Deco.ttf);
+	src: url(font/deco/Market_Deco.ttf);
 }
 
 @font-face {
 	font-family: "cannes";
-	src: url(cannes/Cannes.otf);
+	src: url(font/deco/Cannes.otf);
 }
 
 
