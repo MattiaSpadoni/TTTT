@@ -334,7 +334,7 @@ p{
 
 article.eu_directive {
 	display: grid !important;
-	grid-template-columns: repeat(2, 45%) !important;
+	grid-template-columns: repeat(2, 50%) !important;
 	letter-spacing: 1px;
 	column-count: 1 !important;
 	word-break: normal;
