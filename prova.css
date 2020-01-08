@@ -12,15 +12,18 @@
 
 
 @font-face {
-	font-family: "impact";
-	src: url(font/Impact Label Reversed.ttf);
+	font-family: "Label";
+	src: url(font/home/Impact Label Reversed.ttf);
 }
 
 
 h1 {
-	font-family: "impact";
+	font-family: "Label";
 }
 
+#typo-title {
+	font-family: "Label";
+}
 
 iframe {
 		border: 0;
