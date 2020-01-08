@@ -64,18 +64,18 @@ p {
 header {
 	text-align: center;
 	color:#c3a343;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(gold_texture.jpg) repeat;
-    background: -o-linear-gradient(transparent, transparent);
-    -webkit-background-clip: text;
 }
 
 h1 {
 	font-family: "cannes";
 	font-size: 2.5em;
 	font-weight: normal;
-	color: #DFDF31;
+	color: #c3a343;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
 }
 
 h2 {
@@ -96,6 +96,11 @@ h2 {
 h3 {
 	font-family: "cannes";
 	font-size: 1.5em;
+	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(gold_texture.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
 
 }
 
@@ -324,7 +329,9 @@ figure > table:nth-of-type(even) {
 }
 
 
+article.eu_directive > h3 {
 
+}
 
 
 
