@@ -8,9 +8,14 @@
 		}
 
 
+@font-face{
+	font-family: "impact";
+	src: url(font/Impact Label Reversed.ttf);
 
 
-
+#typo_head {
+	font-family: "impact";
+}
 
 
 iframe {
