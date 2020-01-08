@@ -14,12 +14,9 @@
 
 
 iframe {
-		border:none;
-		seamless: seamless;
-		scrolling:none;
-
+		border: none;
+		overflow: hidden;
+		padding: 0;
+		
 }
 
-.row_iframe {
-			align:center;
-}
