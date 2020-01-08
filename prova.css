@@ -11,9 +11,10 @@
 @font-face{
 	font-family: "impact";
 	src: url(font/Impact Label Reversed.ttf);
+}
 
 
-.typo_head {
+h1 {
 	font-family: "impact";
 }
 
