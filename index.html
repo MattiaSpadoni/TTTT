@@ -7,7 +7,7 @@
 		<script type="text/javascript">
 
   			function change_css(input){
-  				
+  				var css = "";
   				var src = input.id;
   				var css = input.name;
   				console.log(src, css);
@@ -16,14 +16,6 @@
   				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
-  					/*var head = iframe_content.contentWndow.document.getElementsByTagName("head");
-  					console.log(head);
-  					head.removeChild("link");
-  					var link = head.createElement("link");
-  					link.rel = "stylesheet";
-  					link.href = css;*/
-
-
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
   					console.log(src, css);
@@ -129,52 +121,58 @@
 		    </div>
 		    
 		    <div class="btn-toolbar d-flex justify-content-around">
-		    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
-		    		1500
-		    	</button>
-		    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-		    		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
-	          		<button class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
-	          		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
-	          		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
-	       			<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
-	       			<button class="dropdown-item" href="#" name="css_medievale.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
+		    	<div class="dropdown">
+			    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
+			    		1500
+			    	</button>
+			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
+			    		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
+		          		<button class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
+		          		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
+		          		<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
+		       			<button class="dropdown-item" href="#" name="css_medievale.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
+		       			<button class="dropdown-item" href="#" name="css_medievale.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
+		       		</div>
 	       		</div>
-		    	
-		    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
-		    		1920
-		    	</button>
-		    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	       			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
-         			<button class="dropdown-item" href="#" name="css_deco.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
-        			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
-          			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
-          			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
-          			<button class="dropdown-item" href="#" name="css_deco.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
-       			</div>
-		    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
-		    		1980
-		    	</button>
-		    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
-          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
-       			</div>
-		    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
-		    		2050
-		    	</button>
-		    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
-          			<button class="dropdown-item" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
-          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
-          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
-          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
-          			<button class="dropdown-item" name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
-       			</div>	
-	       		
+		    	<div class="dropdown">
+			    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
+			    		1920
+			    	</button>
+			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
+		       			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
+	         			<button class="dropdown-item" href="#" name="css_deco.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
+	        			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
+	          			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
+	          			<button class="dropdown-item" href="#" name="css_deco.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
+	          			<button class="dropdown-item" href="#" name="css_deco.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
+	       			</div>
+	       		</div>
+	       		<div class="dropdown">
+			    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
+			    		1980
+			    	</button>
+			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
+	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
+	       			</div>
+	       		</div>
+	       		<div class="dropdown">
+			    	<button type="button" class="btn btn-sm btn-outline-secondary p-2 my-2 mx-8" data-toggle="dropdown">
+			    		2050
+			    	</button>
+			    	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
+	          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_1.html" onclick="change_css(this)">Art #1</button>
+	          			<button class="dropdown-item" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #2</button>
+	          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_3.html" onclick="change_css(this)">Art #3</button>
+	          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_4.html" onclick="change_css(this)">Art #4</button>
+	          			<button class="dropdown-item" name="css_futurista.css" id="Vitali_5.html" onclick="change_css(this)">Art #5</button>
+	          			<button class="dropdown-item" name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)">Art #6</button>
+	       			</div>	
+	       		</div>
 		    </div>
 		
 <!-- nav vecchia
@@ -241,8 +239,8 @@
 
 
 							</iframe>
-					    </div>
-				</main>
+				</div>
+		    </main>
 
 		<!-- Footer -->
 		<footer class="page-footer font-small blue pt-4">
