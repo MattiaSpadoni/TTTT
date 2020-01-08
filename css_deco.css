@@ -84,7 +84,7 @@ h2 {
 	font-family: "market";
 	font-weight: normal;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2.5em;
 	position: relative;
 	color:#c3a343;
     -webkit-text-fill-color: transparent;
@@ -315,12 +315,43 @@ footer:before {
 
 article.eu_directive {
 	display: grid !important;
-	grid-template-columns: repeat(2, 1fr) !important;
-}
-
-article.eu_directive {
+	grid-template-columns: repeat(2, 50%) !important;
 	word-break: break-all;
 }
+
+article.eu_directive > ul:nth-of-type(odd), 
+article.eu_directive > ol:nth-of-type(odd), 
+article.eu_directive > p:nth-of-type(odd),
+article.eu_directive > h1:nth-of-type(odd),
+article.eu_directive > h2:nth-of-type(odd),
+article.eu_directive > h3:nth-of-type(odd),
+article.eu_directive > h4:nth-of-type(odd),
+article.eu_directive > h5:nth-of-type(odd),
+article.eu_directive > h6:nth-of-type(odd),
+article.eu_directive > figure:nth-of-type(odd),
+article.eu_directive > footer:nth-of-type(odd), 
+figure > table:nth-of-type(odd) {
+	padding-right: 0.5em;
+
+}
+
+article.eu_directive > ul:nth-of-type(even), 
+article.eu_directive > ol:nth-of-type(even), 
+article.eu_directive > p:nth-of-type(even),
+article.eu_directive > h1:nth-of-type(even),
+article.eu_directive > h2:nth-of-type(even),
+article.eu_directive > h3:nth-of-type(even),
+article.eu_directive > h4:nth-of-type(even),
+article.eu_directive > h5:nth-of-type(even),
+article.eu_directive > h6:nth-of-type(even),
+article.eu_directive > figure:nth-of-type(even),
+article.eu_directive > footer:nth-of-type(even), 
+figure > table:nth-of-type(even) {
+	padding-left: 0.5em;
+
+}
+
+
 
 
 
