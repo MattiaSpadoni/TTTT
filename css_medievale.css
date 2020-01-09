@@ -106,7 +106,7 @@ td{
 	border-width: 2px;
 }
 div{
-	background-image: url("miniature_3.png");
+	background-image: url("miniature_3.jpg");
 	padding: 0%;
 	margin-top: 13%;
 	margin-bottom: 13%;
@@ -353,6 +353,8 @@ p{
 	word-break: break-all;
 }
 }
+
+
 
 /*------------------------- Eu directive additional definition ---------------------*/
 
