@@ -14,6 +14,7 @@
 			}
 
   			function change_css(input){
+  				/*start changing the iframe visual appearance: using name and id of the clicked button to identify the new css and new article to load, hide the Iframe and make visible the div with the charging gif.*/
   				var css = "";
   				var src = input.id;
   				var css = input.name;
@@ -24,6 +25,8 @@
   				charging.style.display = "block";
   				iframe_content.setAttribute("src", src);
 
+
+  				/* start to change the CSS only after the iframe content finished loading */
   				iframe_content.onload = function(){
 
   					if (css == "css_futurista.css") {
@@ -31,7 +34,7 @@
   					setTimeout(function(){
   								iframe_content.style.display = "block";
   								charging.style.display = "none";
-  							}, 2000);
+  							    }, 2000);
   					console.log(src, css);
   					alert("We detect an obsolete machine coming from the late '10 or the beginning of '20, put on your smart contact lenses to enjoy the full style, please. If you don't have one.");
   					} else {
@@ -39,10 +42,11 @@
   					setTimeout(function(){
   								iframe_content.style.display = "block";
   								charging.style.display = "none";
-  							}, 2000);
+  							    }, 2000);
   					console.log(src, css);
   					}
   			}
+  		}
   			/*
     var container = document.createElement("div");
     container.appendChild(array_1.item(0));
