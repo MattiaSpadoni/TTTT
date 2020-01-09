@@ -20,13 +20,16 @@
   				console.log(src, css);
   				var iframe_content = document.getElementById("first");
   				var charging = document.getElementById("charging");
-  				iframe_content.style.visibility = "none";
-  				charging.style.visibility = "visible";
+  				iframe_content.style.display = "none";
+  				charging.style.display = "block";
   				iframe_content.setAttribute("src", src);
 
   				iframe_content.onload = function(){
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
-  					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
+  					setTimeout(function(){
+  								iframe_content.style.display = "block";
+  								charging.style.display = "none";
+  							}, 2000);
   					console.log(src, css);
   				}
   			}
