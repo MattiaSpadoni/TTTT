@@ -29,7 +29,7 @@ html {
     height: 100vh;
     padding:0;
     margin:0;
-     overflow: scroll;
+    overflow: scroll;
     overflow-x: hidden;
 }
 
