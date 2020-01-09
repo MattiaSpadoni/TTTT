@@ -137,7 +137,7 @@ section>p:nth-of-type(1)::first-letter {
 
 header {
 	text-align: center;
-		column-count: 1;
+	column-count: 1;
 
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
   	-moz-column-count: 1; /* Firefox */
