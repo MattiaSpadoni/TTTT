@@ -45,6 +45,14 @@ small {
 }
 
 
+/*----- BUTTON -----*/
+.btn-circle {
+	line-height: @btn-circle !important;
+	width: @btn-circle !important;
+}
+
+
+
 
 /*----- IFRAME -----*/
 
