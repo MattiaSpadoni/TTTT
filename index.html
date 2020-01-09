@@ -13,21 +13,41 @@
 				iframe_content.setAttribute("src", src);
 			}
 
-  			function change_css(input){
+  			  			function change_css(input){
+  				/*start changing the iframe visual appearance: using name and id of the clicked button to identify the new css and new article to load, hide the Iframe and make visible the div with the charging gif.*/
   				var css = "";
   				var src = input.id;
   				var css = input.name;
   				console.log(src, css);
   				var iframe_content = document.getElementById("first");
-  				iframe_content.style.visibility = "hidden";
+  				var charging = document.getElementById("charging");
+  				iframe_content.style.display = "none";
+  				charging.style.display = "block";
   				iframe_content.setAttribute("src", src);
 
+  				/* start to change the CSS only after the iframe content finished loading */
+
   				iframe_content.onload = function(){
+  					if (css == "css_futurista.css") {
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
+  					setTimeout(function(){
+  								iframe_content.style.display = "block";
+  								charging.style.display = "none";
+  							    }, 2000);
+  					console.log(src, css);
+  					alert(" '10 or '20 old machine detected, put on your smart contact lenses to enjoy the full style, please. Press ok to go on without them.");
+  					} else {
+  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
+  					setTimeout(function(){
+  								iframe_content.style.display = "block";
+  								charging.style.display = "none";
+  							    }, 2000);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
   					console.log(src, css);
+  					}
   				}
   			}
+  		
   			/*
     var container = document.createElement("div");
     container.appendChild(array_1.item(0));
@@ -180,50 +200,6 @@
 	       			</div>	
 	       		</div>
 		    </div>
-		
-<!-- nav vecchia
-		    <div class="nav-scroller py-1 mb-2">
-	      	<nav class="nav d-flex justify-content-center">
-	      		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">1500</a>
-	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
-	       			</div>
-	       		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">1920</a>
-	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_artdeco.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
-	       			</div>
-	       		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">1980</a>
-	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_1980.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
-	       			</div>
-	       		<a class="btn btn-sm btn-outline-secondary p-2 mx-auto"data-toggle="dropdown" role="button" href="#">2040</a>
-	      		 	<div class="dropdown-menu" aria-labelledby="navbarDropdown" data-toggle="dropdown">
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_3.html" onclick="change_css(this)">Art #1</a>
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #2</a>
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #3</a>
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #4</a>
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #5</a>
-	          			<a class="dropdown-item" href="#" name="css_futurista.css" id="vitali_2.html" onclick="change_css(this)">Art #6</a>
-	       			</div>		
-		    </nav>
-	   		</div>
-	   	-->
-
 		</header>
 	</nav>
 
@@ -241,12 +217,14 @@
 					<button name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)"><p>secondo</p></button>
 					<button name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)"><p>primo</p></button>
 				</div>-->
-						<div class="row iframe-container justify-content-center mh-80">
-					    	<iframe class="embed-responsive-item vh-100 col-10" id="first" src="vitali_2.html">
+						<div class="row vh-85 iframe-container">
+							<div class="occupy_space" id="charging">
+							</div>
+					    	<iframe class="embed-responsive-1by1 col-12" id="first" src="vitali_2.html">
 
 
 							</iframe>
-				</div>
+						</div>
 		    </main>
 
 		<!-- Footer -->
