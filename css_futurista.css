@@ -17,6 +17,30 @@ fonts
 		 url(font/futuristic/neuropol.otf);
 
 }
+
+html {
+	overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 .29em rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  background-color: transparent;
+  margin: 0.1em;
+}
+
+::-webkit-scrollbar {
+  width: .5em;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9e9d9d;
+}
 body{
 
 	background-image: url("futuristic_background.png");
