@@ -55,8 +55,27 @@ iframe {
 
 }
 
+#image_charging {
+	  display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
 body{
 	background-color: #f5e5d5 !important;
+}
+
+/*------- DROPDOWN -------*/
+
+.dropdown-item {
+	max-width: 50%;
+	word-break: break-all;
+}
+
+.dropdown-menu {
+	text-overflow: ellipsis;
+	word-break: break-all;
 }
 
 
