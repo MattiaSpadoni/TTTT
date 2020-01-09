@@ -10,12 +10,22 @@
 }
 }
 
+/*----- FONT -----*/
 
 @font-face {
 	font-family: "Label";
 	src: url(font/home/Impact Label Reversed.ttf);
 }
 
+
+
+/*----- BODY -----*/
+body {
+	background-color: #f5e5d5;
+}
+
+
+/*----- HEAD + HEADLINES -----*/
 
 h1 {
 	font-family: "Label";
@@ -25,15 +35,16 @@ h1 {
 	font-family: "Label";
 }
 
+
+
+/*----- IFRAME -----*/
+
 iframe {
 		border: 0;
 		overflow: hidden;
-		height: 100%;
 		left: 0;
-		top: 0;
-		width: 85%;
 		display: block;
-		
+		height: auto;
 }
 
 .occupy_space {
