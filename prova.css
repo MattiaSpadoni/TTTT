@@ -58,12 +58,34 @@ iframe {
 
 .occupy_space {
 	display: none;
-	width: 100%
+	width: 100%;
 	height: 100%;
-	background-image: url(./caricamento.gif);
+	align-content: center;
+
+}
+
+#image_charging {
+	  display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
 }
 
 body{
 	background-color: #f5e5d5 !important;
 }
+
+/*------- DROPDOWN -------*/
+
+.dropdown-item {
+	max-width: 50%;
+	word-break: break-all;
+}
+
+.dropdown-menu {
+	text-overflow: ellipsis;
+	word-break: break-all;
+}
+
+
 
