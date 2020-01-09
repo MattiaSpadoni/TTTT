@@ -14,39 +14,20 @@
 			}
 
   			function change_css(input){
-  				/*start changing the iframe visual appearance: using name and id of the clicked button to identify the new css and new article to load, hide the Iframe and make visible the div with the charging gif.*/
   				var css = "";
   				var src = input.id;
   				var css = input.name;
   				console.log(src, css);
   				var iframe_content = document.getElementById("first");
-  				var charging = document.getElementById("charging");
-  				iframe_content.style.display = "none";
-  				charging.style.display = "block";
+  				iframe_content.style.visibility = "hidden";
   				iframe_content.setAttribute("src", src);
 
-
-  				/* start to change the CSS only after the iframe content finished loading */
   				iframe_content.onload = function(){
-
-  					if (css == "css_futurista.css") {
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
-  					setTimeout(function(){
-  								iframe_content.style.display = "block";
-  								charging.style.display = "none";
-  							    }, 2000);
+  					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
   					console.log(src, css);
-  					alert(" '10 or '20 old machine detected, put on your smart contact lenses to enjoy the full style, please. Press ok to go on without them.");
-  					} else {
-  					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
-  					setTimeout(function(){
-  								iframe_content.style.display = "block";
-  								charging.style.display = "none";
-  							    }, 2000);
-  					console.log(src, css);
-  					}
+  				}
   			}
-  		}
   			/*
     var container = document.createElement("div");
     container.appendChild(array_1.item(0));
@@ -261,9 +242,6 @@
 					<button name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)"><p>primo</p></button>
 				</div>-->
 						<div class="row vh-85 iframe-container">
-							<div class="occupy_space" id="charging">
-								<img src="caricamento.gif" id="charging_image">
-							</div>
 					    	<iframe class="embed-responsive-1by1 col-12" id="first" src="vitali_2.html">
 
 
