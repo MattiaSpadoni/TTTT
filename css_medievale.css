@@ -43,6 +43,18 @@ html{
   background-color: #9e9d9d;
 }
 
+
+table{
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: overline;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.1);
+	-webkit-text-decoration-color: rgba(0, 0, 0, 0.1);
+	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
+	border-color: rgba(0, 0, 0, 0.7);
+}
+
 body {
 	background-color: rgb(46, 46, 31);
 	margin-left: 2.5%;
@@ -137,7 +149,7 @@ section>p:nth-of-type(1)::first-letter {
 
 header {
 	text-align: center;
-		column-count: 1;
+	column-count: 1;
 
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
   	-moz-column-count: 1; /* Firefox */
@@ -255,6 +267,13 @@ q {
 	font-style: italic;
 	text-align: center;
 	display: inline-block;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: overline;
+	text-decoration: underline;
+	text-decoration-color: rgba(0, 0, 0, 0.1);
+	-webkit-text-decoration-color: rgba(0, 0, 0, 0.1);
+	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
 }
 
 /*
