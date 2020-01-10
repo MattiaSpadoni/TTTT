@@ -76,7 +76,6 @@ small {
 
 #navbarDropdown:hover, .documentation_link:hover {
 	text-decoration: none;
-	font-weight: bolder;
 	text-shadow: .03rem .03rem 0 #454443;
 
 }
@@ -152,6 +151,7 @@ body{
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
+	
 
 }
 #initial{
