@@ -38,7 +38,7 @@
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){
   								iframe_content.style.display = "block";
-  								iframe_content.style.height = "100vh";
+  								iframe_content.classList.add("vh-100");;
   								charging.style.display = "none";
   							    }, 2000);
   					console.log(src, css);
@@ -47,6 +47,7 @@
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){
   								iframe_content.style.display = "block";
+  								iframe_content.classList.add("vh-100");
   								charging.style.display = "none";
   							    }, 2000);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);

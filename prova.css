@@ -90,6 +90,10 @@ iframe {
 
 }
 
+#first{
+	height: 50vh;
+}
+
 .occupy_space {
 	display: none;
 	width: 100%;
