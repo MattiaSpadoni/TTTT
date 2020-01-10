@@ -22,13 +22,20 @@
 	src: url(font/home/OldNewspaperTypes.ttf);
 }
 
+@font-face {
+	font-family: "lek";
+	src: url(font/home/Lekton-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lekton&display=swap');
+
 
 
 
 /*----- BODY -----*/
 body {
 	background-color: #f5e5d5;
-	font-family: "old" !important;
+	font-family: "lek" !important;
 }
 
 
@@ -36,31 +43,39 @@ body {
 
 /*----- HEAD + HEADLINES -----*/
 #typo-title {
-	font-family: "old";
 	font-size: 4em;
 	line-height: 0.3em;
+	text-decoration: none;
+	font-family: "old";
+}
+
+#typo-title:hover {
+	text-decoration: none;
 }
 
 #typo-div {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	font-family: "lek" !important;
 }
 
 small {
-	font-family: "old";
+	font-family: "lek";
 	font-size: 1rem !important;
 	line-height: 0.1rem !important;
 	padding: 0 !important;
 }
 
 
-/*----- BUTTON -----*/
-.first-nav {
-	font-family: "old";
-}
-
+/*----- NAV + BUTTON -----*/
 .first-nav > a, .documentation_link {
 	color: #454443 !important;
+}
+
+#navbarDropdown:hover, .documentation_link:hover {
+	text-decoration: none;
+	font-weight: bold;
+
 }
 
 .btn-circle {
