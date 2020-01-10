@@ -54,9 +54,9 @@ small {
 
 
 /*----- BUTTON -----*/
-.first-nav {
+.first-nav > a, .documentation_link {
 	font-family: "old";
-	color: grey !important;
+	color: #454443 !important;
 }
 
 .btn-circle {
@@ -94,7 +94,7 @@ iframe {
 	  display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 35%;
+  	width: 7.5%;
 }
 
 body{
@@ -117,7 +117,7 @@ body{
 /*--------------Initial page-------*/
 
 #initial_page_row{
-	margin-top: 15%;
+
 	margin-left: 25%;
 	margin-left: 25%;
 	width: 50%;
@@ -131,5 +131,8 @@ body{
 	width: 50%;
 	text-align: center;
 }
+
+/*------ DOCUMENTATION LINK --------*/
+
 
 
