@@ -17,6 +17,12 @@
 	src: url(font/home/Impact_Label_Reversed.ttf);
 }
 
+@font-face {
+	font-family: "old";
+	src: url(font/home/OldNewspaperTypes.ttf);
+}
+
+
 
 
 /*----- BODY -----*/
@@ -25,11 +31,13 @@ body {
 }
 
 
+
+
 /*----- HEAD + HEADLINES -----*/
 #typo-title {
-	font-family: "Label";
-	font-size: 6em;
-	line-height: 0.2em;
+	font-family: "old";
+	font-size: 4em;
+	line-height: 0.3em;
 }
 
 #typo-div {
@@ -38,7 +46,7 @@ body {
 }
 
 small {
-	font-family: "Label";
+	font-family: "old";
 	font-size: 1rem !important;
 	line-height: 0.1rem !important;
 	padding: 0 !important;
@@ -46,9 +54,19 @@ small {
 
 
 /*----- BUTTON -----*/
+.first-nav {
+	font-family: "old";
+	color: grey !important;
+}
+
 .btn-circle {
-	line-height: @btn-circle !important;
-	width: @btn-circle !important;
+	font-family: "old";
+	width: 4em;
+	height: 4em;
+	border-width: 0.1rem !important;
+	background-color: #f7efe6 !important;
+	color: #454443 !important;
+
 }
 
 
