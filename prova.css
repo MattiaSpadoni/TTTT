@@ -69,6 +69,10 @@ small {
 
 }
 
+.btn-circle:hover {
+	/*box-shadow: .35rem .2rem 0 #454443 !important;*/
+	box-shadow:  0.1rem solid #454443;
+}
 
 
 
@@ -94,7 +98,7 @@ iframe {
 	  display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 35%;
+  	width: 50%;
 }
 
 body{
