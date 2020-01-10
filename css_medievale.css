@@ -248,7 +248,7 @@ h1, h2, h3, h4{
 figcaption{
 	font-family: "proto-roman";
 	font-style: italic;
-	font-variant: small-caps;
+	text-transform: lowercase;
 }
 
 a {
