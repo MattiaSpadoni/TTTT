@@ -28,6 +28,7 @@
 /*----- BODY -----*/
 body {
 	background-color: #f5e5d5;
+	font-family: "old" !important;
 }
 
 
@@ -54,8 +55,11 @@ small {
 
 
 /*----- BUTTON -----*/
-.first-nav > a, .documentation_link {
+.first-nav {
 	font-family: "old";
+}
+
+.first-nav > a, .documentation_link {
 	color: #454443 !important;
 }
 

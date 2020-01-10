@@ -78,8 +78,10 @@ body {
     color: #ffb459;
     text-align: justify;
     position: absolute;
+}
 
-
+p {
+	font-size: 1.2em;
 }
 
 
@@ -187,16 +189,15 @@ q {
 
 /*----- FIGURES -----*/
 figure {
-	display: inline-block;
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	vertical-align: top;
 	position: relative;
-	float: left;
 }
 
 img {
-	display: inline;
+	display: block;
 	max-width: 40vw;
 	margin-right: auto;
 	margin-left: auto;
@@ -213,12 +214,11 @@ img {
     0 0 1.4vw #ff00f7,
     0 0 1.8vw #ff00f7,
     0 0 2vw #ff00f7; 
-    float: left;
 }
 
 figcaption {
 	max-width: 40vw;
-	display: inline-block;
+	display: block;
 	margin: auto;
 	font-family: "tall";
 	/*background: -webkit-linear-gradient(#ff8c00, #ea00ff);
@@ -230,7 +230,6 @@ figcaption {
 	font-size: 2rem;
 	text-align: justify;
 	object-fit: contain;
-	float: left;
 }
 
 
