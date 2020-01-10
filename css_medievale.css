@@ -73,7 +73,6 @@ article  {
 	padding-bottom: 13%;
 	padding-top: 13%;
 
-
 }
 
 section{
@@ -84,6 +83,8 @@ section{
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
   	-moz-column-count: 2; /* Firefox */
   	column-gap: 10%;
+  	margin-top: 7.5%;
+	margin-bottom: 7.5%;
 
 }
 
