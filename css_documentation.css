@@ -1,8 +1,30 @@
 /*----css di prova per documentazione --*/
 
-body {
 
+/*----- FONT -----*/
+@font-face {
+	font-family: "lek";
+	src: url(font/home/Lekton-Regular.ttf);
 }
+
+
+/*----- BODY -----*/
+body {
+	font-family: "lek" !important;
+}
+
+
+/*----- HEADLINES -----*/
+h1 {
+	font-family: "lek";
+	text-transform: uppercase;
+}
+
+#h_disc {
+	color: #f2b579;
+}
+
+
 .row{
 	margin-top: 2%;
 	text-align: justify;
