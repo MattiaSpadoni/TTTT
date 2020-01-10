@@ -70,11 +70,14 @@ small {
 /*----- NAV + BUTTON -----*/
 .first-nav > a, .documentation_link {
 	color: #454443 !important;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 #navbarDropdown:hover, .documentation_link:hover {
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bolder;
+	text-shadow: .03rem .03rem 0 #454443;
 
 }
 
