@@ -63,12 +63,16 @@ small {
 	font-family: "old";
 	width: 4em;
 	height: 4em;
-	border-width: 0.1rem !important;
+	border-width: 0.20rem !important;
 	background-color: #f7efe6 !important;
 	color: #454443 !important;
 
 }
 
+.btn-circle:hover {
+	/*box-shadow: .35rem .2rem 0 #454443 !important;*/
+	box-shadow:  0 0 0 0.15rem #454443;
+}
 
 
 
@@ -91,7 +95,7 @@ iframe {
 }
 
 #image_charging {
-	  display: block;
+	display: block;
   	margin-left: auto;
   	margin-right: auto;
   	width: 7.5%;
