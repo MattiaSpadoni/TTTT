@@ -54,9 +54,9 @@ small {
 
 
 /*----- BUTTON -----*/
-.first-nav {
+.first-nav > a, .documentation_link {
 	font-family: "old";
-	color: grey !important;
+	color: #454443 !important;
 }
 
 .btn-circle {
@@ -98,7 +98,7 @@ iframe {
 	  display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 50%;
+  	width: 7.5%;
 }
 
 body{
@@ -116,6 +116,27 @@ body{
 	text-overflow: ellipsis;
 	word-break: break-all;
 }
+
+
+/*--------------Initial page-------*/
+
+#initial_page_row{
+
+	margin-left: 25%;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+
+}
+#initial{
+	display: block;
+	margin-left: 25%;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+}
+
+/*------ DOCUMENTATION LINK --------*/
 
 
 
