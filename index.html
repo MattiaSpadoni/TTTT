@@ -7,6 +7,12 @@
 		<title>Typo</title>
 		<script type="text/javascript">
 
+			function prova_vh(input){
+				var altezza = document.getElementById("first").classList.add("vh-100");
+
+				console.log("ho girato");
+			}
+
 			function simply_src(input){
 				var src = input.id;
 				var iframe_content = document.getElementById("first");
@@ -32,6 +38,7 @@
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){
   								iframe_content.style.display = "block";
+  								iframe_content.classList.add("vh-100");;
   								charging.style.display = "none";
   							    }, 2000);
   					console.log(src, css);
@@ -40,6 +47,7 @@
   					iframe_content.contentWindow.document.getElementById("test").setAttribute("href", css);
   					setTimeout(function(){
   								iframe_content.style.display = "block";
+  								iframe_content.classList.add("vh-100");
   								charging.style.display = "none";
   							    }, 2000);
   					setTimeout(function(){iframe_content.style.visibility = "visible";}, 2000);
@@ -212,16 +220,17 @@
 		</div>
 
 			<main class="container-fluid mt-3 mb-3">
-				<!-- Button Draft 
+				
 				<div>
-					<button name="css_futurista.css" id="eu_directive.html" onclick="change_css(this)"><p>secondo</p></button>
+					<button name="css_futurista.css" id="eu_directive.html" onclick="prova_vh(this)"><p>secondo</p></button>
+				<!-- Button Draft 
 					<button name="css_medievale.css" id="vitali_2.html" onclick="change_css(this)"><p>primo</p></button>
 				</div>-->
 						<div class="row iframe-container justify-content-center mh-70">
 							<div class="occupy_space vh-100 col-10" id="charging">
 									<img src="caricamento.gif" alt="charging gif" id="image_charging">
 							</div>
-					    	<iframe class="embed-responsive-item vh-100 col-10" id="first" src="initial_page.html">
+					    	<iframe class="embed-responsive-item col-10" id="first" src="initial_page.html">
 							</iframe>
 						</div>
 		    </main>

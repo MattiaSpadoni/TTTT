@@ -102,7 +102,11 @@ iframe {
 		overflow: hidden;
 		left: 0;
 		display: block;
-		height: auto;
+
+}
+
+#first{
+	height: 50vh;
 }
 
 .occupy_space {
