@@ -8,7 +8,31 @@
 }
 
 
-/*----- BODY -----*/
+/*----- HTML + BODY -----*/
+html {
+	 overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 .29em rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  background-color: transparent;
+  margin: 0.05em;
+}
+
+::-webkit-scrollbar {
+  width: .5em;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #9e9d9d;
+}
+
 body {
 	font-family: "lek" !important;
 }
@@ -18,10 +42,44 @@ body {
 h1 {
 	font-family: "lek";
 	text-transform: uppercase;
+	text-align: center;
 }
 
 #h_disc {
-	color: #f2b579;
+	color: #faac5f;
+	font-weight: bold;
+}
+
+/*.h_rectangle {
+    position: absolute;
+    width: 15em;
+    height: 3em;
+    margin-top: -.5em;
+    margin-left: 15em;
+    z-index: -1;
+    background-color:  #dbdad9;
+	-webkit-box-shadow: -.9rem -.1rem 0 0 rgba(0,0,0,0.43);
+	-moz-box-shadow: -.9rem -.1rem 0 0 rgba(0,0,0,0.43);
+    box-shadow: -.5rem -.3rem 0 0 rgba(0,0,0,0.43);
+
+
+/*----- LINKS -----*/
+a {
+	color: white !important;
+	background-color: #faac5f !important;
+	padding-right: .2rem;
+	padding-left: .2rem;
+
+}
+
+a:hover {
+	text-decoration: underline !important;
+}
+
+
+li {
+	margin-bottom: .5rem;
+	padding-right: .1rem;
 }
 
 
@@ -34,6 +92,10 @@ h1 {
 	margin: 7.5% 2% 7.5% 2%;
 
 }
+
+
+
+
 
 #separator_0 {
 	background-color: brown;
@@ -51,10 +113,7 @@ h1 {
 	background-color: blue;
 }
 
-h1 {
-	text-align: center;
-	color: red;
-}
+
 
 .about {
 	margin-right: 25%;
