@@ -349,6 +349,10 @@ figure > table:nth-of-type(even) {
 }
 
 
+article.eu_directive > body {
+	margin: 10% 10% 10%
+}
+
 article.eu_directive > h3 {
 
 }
