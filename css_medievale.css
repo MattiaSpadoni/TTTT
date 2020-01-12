@@ -428,6 +428,18 @@ figure > table:nth-of-type(even) {
 
 }
 
+/*
+figure > table:nth-of-type(odd){
+	padding-right: 2.5%;
+}
+figure > table:nth-of-type(even){
+	padding-left: 2.5%;
+}
 
+
+
+
+
+*/
 /*--------------prova locale con un solo documento*/
 
