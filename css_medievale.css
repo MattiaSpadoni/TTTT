@@ -408,7 +408,7 @@ article.eu_directive > h6:nth-of-type(odd),
 article.eu_directive > figure:nth-of-type(odd),
 article.eu_directive > footer:nth-of-type(odd), 
 figure > table:nth-of-type(odd) {
-	padding-right: 2.5%;
+	padding-right: 5%;
 
 }
 
@@ -424,7 +424,7 @@ article.eu_directive > h6:nth-of-type(even),
 article.eu_directive > figure:nth-of-type(even),
 article.eu_directive > footer:nth-of-type(even), 
 figure > table:nth-of-type(even) {
-	padding-left: 2.5%;
+	padding-left: 5%;
 
 }
 
