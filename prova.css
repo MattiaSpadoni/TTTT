@@ -189,3 +189,25 @@ body{
 
 
 
+/*----- Media Queries ----*/
+
+
+@media(max-width: 768px){
+	.btn-circle {
+		margin-left: 40%;
+	}
+}
+
+
+
+/*--------cose da controllare 
+
+- white space: valutare se togliere il nowrap sotto i 500 pixel: se si restringe solo lo schermo toglierlo va bene, se si lavora con il responsive
+simulator di ispeziona questo non va bene. Il problema è che il nowrap obbliga l'elemento sotto a seguire la lunghezza della scritta in tutto e 
+per tutto, il wrap normal la fa andare a capo appena il contenitore finisce, bisogna decidere che fare, allo stato attuale io farei una media query 
+mirata alla risoluzione bassissima.
+
+- Col: per risolvere il problema dell'allineamento dei bottoni bisogna che sopra il "col" si indichi a risoluzioni basse quante colonne si vuole che prenda.
+Il problema è ancora qui che nel telefono la risoluzione ha una logica, è nell'ispezione e nella riduzione artificiosa della grandezza di screen che non va;
+
+----------------*/
