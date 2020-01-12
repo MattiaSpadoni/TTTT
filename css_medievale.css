@@ -49,9 +49,9 @@ table{
 	color: rgba(0, 0, 0, 0.7);
 	text-decoration: overline;
 	text-decoration: underline;
-	text-decoration-color: rgba(0, 0, 0, 0.1);
-	-webkit-text-decoration-color: rgba(0, 0, 0, 0.1);
-	-moz-text-decoration-color: rgba(0, 0, 0, 0.1);
+	text-decoration-color: rgba(0, 0, 0, 0.2);
+	-webkit-text-decoration-color: rgba(0, 0, 0, 0.2);
+	-moz-text-decoration-color: rgba(0, 0, 0, 0.2);
 	border-color: rgba(0, 0, 0, 0.7);
 }
 
