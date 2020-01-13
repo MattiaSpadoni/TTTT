@@ -194,10 +194,14 @@ h1, h2, h3, h5 {
 	word-break: break-all;
 }
 
-p, figcaption, h4, h6, table, q, li {
-	font-family: "text";
+p, figcaption, h4, h6, table, q, {
+	font-family: "text" !important;
 	word-break: normal;
 	margin: 2%;
+}
+
+li{
+	word-break: inherit !important;
 }
 
 
@@ -474,6 +478,25 @@ h5 {
 	to{opacity: 1;}
 }
 
+@keyframes animation_nested{
+
+	from{margin-right: 50%;}
+	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 0%;}
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-webkit-keyframes animation_nested{
+
+	from{margin-right: 50%;}
+	to{margin-right: 0%;}
+	from{margin-left: 50%;}
+	to{margin-left: 0%;}
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
 /*------------------------------------------------------*/
 
 
@@ -575,7 +598,7 @@ article.eu_directive {
 
 article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 	display: inline-block;
-	padding: 30px;
+	padding: 50px;
 	margin: 0px;
 	font-size: 10px;
 	border-style: solid;
@@ -595,13 +618,28 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
   	opacity: 0;
 }
 
+li > ol, li > ul {
+	border-style: solid;
+	padding: 50px !important;
+	border-color: rgb(153, 204, 255) !important;
+	border-width: 4px !important;
+	border-radius: 15px !important;
+	background-color: rgba(255, 255, 204,0.5) !important;
+	word-break: break-all !important;
+}
+
+li > ol:hover, li > ul:hover{
+	background-color: rgb(255, 255, 179) !important;
+}
+
+
 article.eu_directive > ul:nth-of-type(odd):hover, ol:nth-of-type(odd):hover{
 	background-color: rgb(193, 128, 255) !important;
 }
 
 article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
 	display: inline-block;
-	padding: 30px;
+	padding: 50px;
 	margin: 0px;
 	font-size: 10px;
 	border-style: solid;
@@ -623,6 +661,9 @@ article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
 
 article.eu_directive > ol:nth-of-type(even):hover, ul:nth-of-type(even):hover {
 	background-color: rgb(128, 128, 255) !important;
+}
+article.eu_directive > ol, article.eu_directive > ul {
+	word-break: break-all !important;
 }
 
 /*-------------------- EU directive paragraphs ----------------*/
@@ -778,6 +819,7 @@ article.eu_directive > h4:nth-of-type(even):hover, article.eu_directive > h5:nth
 article.eu_directive > figure:nth-of-type(even) {
 	border-style: solid;
 text-align: justify;
+border-width: 7px;
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
 	animation-fill-mode: forwards;
@@ -801,6 +843,7 @@ article.eu_directive > figure:nth-of-type(even):hover {
 article.eu_directive > figure:nth-of-type(odd) {
 text-align: justify;
 border-style: solid;
+border-width: 7px;
 	height: auto;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
@@ -852,6 +895,13 @@ figure > table:nth-of-type(even) {
 
 figure > table {
 	font-size: 8px;
+}
+ul > table:nth-of-type(odd),
+ol > table:nth-of-type(odd),
+ul > table:nth-of-type(even),
+ol > table:nth-of-type(even) {
+	word-break: break-all !important;
+	border-radius: 20px !important;
 }
 
 
@@ -1034,5 +1084,11 @@ article.eu_directive > p, ol, ul{
 	font-size: 10px;
 	word-break: break-all;
 }
+}
+
+/*------------------------------------------------*/
+
+h4, h5, h6, li, p, q, table, figcaption {
+	font-family: "text" !important;
 }
 

@@ -199,6 +199,13 @@ body{
 	}
 }
 
+@media(max-width: 876px){
+	#first{
+	width: 100vw;
+	}
+
+}
+
 
 
 /*--------cose da controllare 

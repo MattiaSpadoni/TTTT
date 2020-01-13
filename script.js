@@ -1,23 +1,3 @@
-function prova_vh(input){
-				var altezza = document.getElementById("first").classList.add("vh-100");
-
-				console.log("ho girato");
-			}
-
-			function simply_src(input){
-				var src = input.id;
-				if (src=="disclaimer.html"){
-					var iframe_content = document.getElementById("first");
-					iframe_content.classList.remove("vh-100");
-					iframe_content.setAttribute("src", src);
-				} else {
-					var iframe_content = document.getElementById("first");
-					iframe_content.classList.add("vh-100");
-					iframe_content.setAttribute("src", src);
-				}
-
-			}
-
 function change_css(input){
   				/*start changing the iframe visual appearance: using name and id of the clicked button to identify the new css and new article to load, hide the Iframe and make visible the div with the charging gif.*/
   				var css = "";
@@ -139,3 +119,9 @@ BOZZE DI SCRIPT NON USATI/NON FUNZIONANTI/ALTERNATIVE A QUELLI USATI/PROVE GENER
     }
   }
 */
+
+/*function prova_vh(input){
+        var altezza = document.getElementById("first").classList.add("vh-100");
+
+        console.log("ho girato");
+      }*/

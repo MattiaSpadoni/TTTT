@@ -194,9 +194,11 @@
 	<div class="row">
     	<div class="col-12">
       		<p>We created 2 different scripts for 2 different reasons.
-      		The first script is the one that change the content and the style of the iframe. a little Javascript is used firstly to change the SRC of the iframe and then through the <em>onload</em> wait until the page is loaded and then changing the CSS of the page. During the charge the iframe is hidden making impossible for users to see the changes going on.</p>
+      		The first script is the one that change the content and the style of the iframe. a little Javascript is used firstly to change the SRC of the iframe and then through the <em>onload</em> wait until the page is loaded and then the CSS is changed. Javascript go inside the iframe document and change the link element marked with a special ID. During the charge the iframe is set to <em>display: none;</em> and JS makes visible another div that normally has no display. This div has a background loading gif that we use during the iframe loading.
+          </p>
 
-      		<p>The second script is used to automatically populate the page of the EU-directive. In fact at the beginning the page is empty and only through 2 fetch (a mechanism to handle in a simpler way calls to the server) the page is populated with all tags coming from 2 different HTML documents. We realized this script in order to have something that automatically take elements of different language versions of the same document and puts them in a grid without a long manual encoding. </p>
+      		<p>The second script is used to automatically populate the page of the EU-directive. In fact at the beginning the page is empty and only through 2 fetch methods the page is populated with all tags coming from 2 different HTML documents. We realized this script in order to have something that automatically take elements of different language versions of the same document and puts them in a grid without a long manual encoding. To work properly the user must have clear what he want. Indeed the script go inside the <em>article</em> element and take all its children, put them in an HTML collection and then it can start to iterate and place all elements in the page. According to our preferences we created an raw html without any other intermediate div or sections in order to take basic elements. It is possible to change the structure according to our preferences.</p>
+          <p>All elements are put in a grid with </p>
     	</div>
   	</div>  	
   </div>
