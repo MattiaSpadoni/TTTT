@@ -853,6 +853,13 @@ figure > table:nth-of-type(even) {
 figure > table {
 	font-size: 8px;
 }
+ul > table:nth-of-type(odd),
+ol > table:nth-of-type(odd),
+ul > table:nth-of-type(even),
+ol > table:nth-of-type(even) {
+	word-break: break-all;
+	border-radius: 20px;
+}
 
 
 /*-----------------------Eu Directive footer ---------------------*/
