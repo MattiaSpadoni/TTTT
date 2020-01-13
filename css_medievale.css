@@ -339,10 +339,9 @@ article.eu_directive > h3:nth-of-type(odd),
 article.eu_directive > h4:nth-of-type(odd),
 article.eu_directive > h5:nth-of-type(odd),
 article.eu_directive > h6:nth-of-type(odd),
-article.eu_directive > figure:nth-of-type(odd),
 article.eu_directive > footer:nth-of-type(odd)
 {
-	padding-right: 5%;
+	padding-right: 10%;
 
 }
 
@@ -355,10 +354,10 @@ article.eu_directive > h3:nth-of-type(even),
 article.eu_directive > h4:nth-of-type(even),
 article.eu_directive > h5:nth-of-type(even),
 article.eu_directive > h6:nth-of-type(even),
-article.eu_directive > figure:nth-of-type(even),
+
 article.eu_directive > footer:nth-of-type(even)
 {
-	padding-left: 5%;
+	padding-left: 10%;
 
 }
 }
@@ -445,7 +444,7 @@ article.eu_directive > h3:nth-of-type(odd),
 article.eu_directive > h4:nth-of-type(odd),
 article.eu_directive > h5:nth-of-type(odd),
 article.eu_directive > h6:nth-of-type(odd),
-article.eu_directive > figure:nth-of-type(odd),
+
 article.eu_directive > footer:nth-of-type(odd)
 {
 	padding-right: 5%;
@@ -461,7 +460,7 @@ article.eu_directive > h3:nth-of-type(even),
 article.eu_directive > h4:nth-of-type(even),
 article.eu_directive > h5:nth-of-type(even),
 article.eu_directive > h6:nth-of-type(even),
-article.eu_directive > figure:nth-of-type(even),
+
 article.eu_directive > footer:nth-of-type(even)
 {
 	padding-left: 5%;
