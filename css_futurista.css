@@ -819,6 +819,7 @@ article.eu_directive > h4:nth-of-type(even):hover, article.eu_directive > h5:nth
 article.eu_directive > figure:nth-of-type(even) {
 	border-style: solid;
 text-align: justify;
+border-width: 7px;
 	height: auto;
 	background-color: rgba(204, 204, 255, 0.5);
 	animation-fill-mode: forwards;
@@ -842,6 +843,7 @@ article.eu_directive > figure:nth-of-type(even):hover {
 article.eu_directive > figure:nth-of-type(odd) {
 text-align: justify;
 border-style: solid;
+border-width: 7px;
 	height: auto;
 	background-color: rgba(217, 179, 255, 0.5);
 	animation-fill-mode: forwards;
