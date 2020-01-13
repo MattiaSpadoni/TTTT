@@ -617,10 +617,10 @@ article.eu_directive > ul:nth-of-type(odd), ol:nth-of-type(odd) {
 li > ol, li > ul {
 	border-style: solid;
 	padding: 50px !important;
-	border-color: rgb(153, 204, 255);
+	border-color: rgb(153, 204, 255) !important;
 	border-width: 4px !important;
 	border-radius: 15px !important;
-	background-color: rgba(255, 255, 204,0.5);
+	background-color: rgba(255, 255, 204,0.5) !important;
 	word-break: break-all !important;
 }
 
