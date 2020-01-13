@@ -455,7 +455,7 @@ h5 {
 
 
 }
-@keyframes table_animation{
+@keyframes animation_table{
 
 	from{margin-right: 50%;}
 	to{margin-right: 0%;}
@@ -464,7 +464,7 @@ h5 {
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
-@-webkit-keyframes table_animation{
+@-webkit-keyframes animation_table{
 
 	from{margin-right: 50%;}
 	to{margin-right: 0%;}

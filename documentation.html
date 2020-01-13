@@ -19,25 +19,40 @@
       		<img src="#" clss=".img-fluid">
     	</div>
     	<div class="col-12 col-md-6 col-lg-8 col-xl-8">
-      		<p>Author: Mattia Spadoni</p>
-			<p>Context: esame Web Technologies, master degree in Digital Humanities and Digital Knowledge, academic year: 2018-2019</p>
-			<p>Description: the style want to reproduce the late medieval manuscript, ideally the humanistic 1440 manuscript. 
-			It starts from dividing in 2 columns the document on a parchment background, in order to imitate a common use in ancient manuscripts. On the other side the fact that we are online blocks us from trying to reproduce also the structure of a book divided in pages.
-			At the same time I modeled the layout to be loyal to the page structure typical of a humanistic manuscript through the use of the golden ratio. From our historical sources I understood that the blank space around the text is bigger under and above the text, is medium on the external side of the page and lower on the internal one. Spaces are not created randomly and everyone is proportional to the others through golden ration. I maintained this proportion using a 13% top and bottom padding, a 8% left and right padding and a column gap of 10% (resulting in a gap of 5% for each column). These numbers were not random, in fact I chose them from the Fibonacci sequence.
-			In order to avoid a displeasent appearance on small and medium screens I decided to break the 2 column pagination when going under the 768px screen definition. At the same time I maintained the golden ratio proportion among all text margins.
-			The font is derived from the formalization of one of humanistic fonts. Paleography studies says that humanistic fonts were deeply bounded to carolingian fonts trying to recover the ancient roman way of writing. Conrad Sweynheym and Arnold Pannartz were the first humanists to introduce
-			movable type printing press in Italy, they based their font on the Humanistic minuscole used during their time. According to this fact I chose to use their font as one of the major font during that period.
-			One of elements that differentiate humanistic minuscole from carolingian one was the lighter hink on manuscripts. This fact is reproduced by CSS through text opacity.
-			The use of subscriptions reproduce the lines left by monks when they used special tools to avoid writing crooked.
-			Paragraph lines are a bit more separated one from the other in order to represent the typical humanistic manuscript. In fact besides their inspiration to carolingian way of writing, humanistic writers prefers to use a lighter page with much more white space than past manuscripts. The humanistic way of writing born from Petrarca as a reaction to the heavy and dark page of late gothic manuscripts. Indeed it is why I tried to maintain a light page with a lot of space and a weaker color of text than usual.
-			The initial sections' capital lettere is, on the other side, not philological, this fact is linked to the lack of historically correct capital letter fonts. After an unsuccesful research I used the most correct free font I was able to find on the internet.
-			</p>
-			<ul>Sources:
+      <h2>Author: Mattia Spadoni</h2>
+			<h2>Context</h2> 
+      <p>Web Technologies exam, DHDK master degree, Bologna University, academic year: 2018-2019</p>
+			<h2>Description</h2> 
+      <h3>Time Period</h3>
+      <p>1445</p>
+      <h3>Concept</h3>
+      <p>The 1445 typographical style aims to reproduce the late italian medieval (or humanistic) manuscript.</p>
+			<h3>Layout</h3>
+      <p>The style starts from the use of a parchment background. The body of the HTML is set to a dark gray color, after it every article has a background image made by a parchment. It is a .png file, 721x864 px, it is repeated along the y axis to cover the all document without being streched. I cropped the image along its borders to make more realistic the shape of a parchment <em>folio</em> (sheet).
+      Following a common humanistic practice I decided to use the golden ratio canon rule to designate the text area. Through the use of CSS percentage property I set the article padding to be coherent with the Golden ratio Rule. Bottom padding is 55%, the top is 34%, the left one to 21% and the right one is 13%. Through media queries I adapted the proportion to a more adequate one starting from a width minor than 768 px. I follow the Fibonacci sequence to maintain the golden ratio.
+      
+      <p>Clarification: the proportion is studied to show the ideally left page of a manuscript.
+      In the Eu directive document the proportion is maintained at the article level.</p>
+
+      <h3>Font</h3>
+      <p>The font is the Sweynheim-Pannartz font. Conrad Sweynheym and Arnold Pannartz introduced movable type printing process in Italy from the Benedictin monastery of Subiaco. They did it in 1476 and they modeled their font on the one used in manuscript of that time.
+      I didn't choose a gothic font due to the fact that humanistists (starting from Petrarca) created a new way of writing as an answer to the dark, bold and difficult to read late gothic fonts used in Europe. They took inspiration from the Carolingian way of writing believing that was the font used from original classic Roman authors. Even if they were wrong their font became the standard.
+      The ink is not completely black, but a shade of dark gray, I combined this choice with a CSS increase of font weight. I used these 2 elements to create a page with nearly bold letters but with a not so dark writing. I made this choice starting from the observation of several images of manuscripts combining that with the natural degradation of color through time.
+      The line and letter separation is a little higher than the usual standard today, I made this choice starting from the observation of  humanistic manuscripts. Humanists reacted to the gothic dark and heavy page, I tried to create a light page with a good black and white balance.</p>
+      <p>Since I was not able to find a totally historical correct I chose the most similar to the one used during late medieval age with white letters and grapevine decoration.</p>
+
+
+      <h3>Text decoration</h3>
+
+      <p>All barely visible subscriptions under every line is the reproduction of a tipical sign of manuscripts. Monks used to mark the page with special tools, they used the resulting lines as a sign to write straight. I made them with the opacity of a black ink set to 0.2</p>
+      <h2>Sources:</h2>
+			<ul>
 				<li><a href="http://www.e-codices.unifr.ch/en/fmb/cb-0137/1r" target="_blank">http://www.e-codices.unifr.ch/en/fmb/cb-0137/1r</a></li>
 				<li><a href="https://www.vhmmlschool.org/latin-humanist" target="_blank">https://www.vhmmlschool.org/latin-humanist</a></li>
 				<li><a href="http://irnerio.cirsfid.unibo.it/browser/095/001r/" target="_blank">http://irnerio.cirsfid.unibo.it/browser/095/001r/</a></li>
 				<li><a href="http://irnerio.cirsfid.unibo.it/browser/170/023r/" target="_blank">http://irnerio.cirsfid.unibo.it/browser/170/023r/</a></li>
 				<li><a href="http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html" target="_blank">http://guity-novin.blogspot.com/2012/04/modern-newspaper-magazine-layouts.html</a></li>
+        <li><em>G. Cencetti, Paleografia Latina</em>, publisher: Jouvence, Rome, 2002.</li>
 			</ul>
     	</div>
   	</div>
@@ -98,26 +113,34 @@
       		<img src="#" clss=".img-fluid">
     	</div>
     	<div class="col-12 col-md-6 col-lg-8 col-xl-8">
-			<p>Author: Mattia Spadoni</p>
-			<p>Context: Web Technologies exam, master degree in Digital Humanities and Digital Knowledge, academic year: 2018-2019.</p>
-			<p>Description (fictional description): the development of cloud technologies reached a new level. Through the use of contact lenses we are now connected to the net itself. The display of paragraph is only poorly supported by old devices. In reality all sections and windows are spreaded along our visual area allowing us to look at specific windows.
-			After the initial hype there was a fisiological drop in interest in this technology. During the <em>new information conference</em> held Rome in 2031, the use of smart contact lenses started to become much more common among people. 1 year later there was another huge progression, the use of a background theme. This improvement started by the will of some people to feel immersed in a virtual space.
-			During that period a lot of people tried to realise a sort of copy of the world, but soon this fashion died.
-			People started to feel unconfort with a too loyal representation of the tangible reality.
-			The development stopped between 2037 and 2045 due to the III world war between the Neo-URSS and the Great Capitalist America.
-			After a tremendous war the Neo-URSS resulted victorius and smart contact lenses restarted to improve.
-			During last years of '40s there was a huge revival of old fashioned way to think the net and in 2049 started to become common the usage of a background made like what people in '10s thought that internet was: a net of electrical connections.
-			This view didn't affect only the way of thinking the background, but also the font and the animation we used:
-			</p>
-			<ul>
-				<li>The font is a common futuristic/technological of late 10s, now we have a lot of more common fonts like Times New Roman 2.0 and Neo costructivists font, but in 2050 the fashion about old style internet was so strong that these font were rejected.</li>
-				<li>The animation tried to reproduce the display of text inside our visual area, even if today (in 2065) is common to go inside a completely loaded information space, there are still some articles using that type of animation.
-				We also included a support for old devices used during the '10s. In that case we used 3 different type of animation bounded to different type of elements in the page to mimic a little part of what you can see in a complete 360° elements display.
-				From a margin right of 50% to 25% and a margin left of 50% to 5% is the animation used for odd paragraphs, the reversed one for even paragraphs a 50% to 30% on both sides animation is the one used for all text elements that are not paragraphs.
-				Everyone use a 2 seconds delay before starting.</li>
-			</ul>
+      <h2>Author: Mattia Spadoni</h2>
+      <h2>Context</h2> 
+      <p>Web Technologies exam, DHDK master degree, Bologna University, academic year: 2018-2019</p>
+      <h2>Description</h2> 
+      <h3>Time Period</h3>
+      <p>2050</p>
+      <h3>Concept</h3>
+      <p>The 2050 typographical style aims to reproduce the future (or past) way of making typographical layout.</p>
+      <h3>Fictionalised concept</h3>
+      <p>The result of the 2060-2061 class of DHDK web technologies course. This style want to reproduce the common way of make typography at the beginning of last decade.</p>
+      <h4>History</h4>
+      <p>Description (fictional description): the development of cloud technologies reached a new level. Through the use of contact lenses we are now connected to the net itself. After the initial hype there was a fisiological drop in interest in this technology. During the <em>new information conference</em> held Rome in 2031, the use of smart contact lenses started to become much more common among people. 1 year later there was another huge progression, the use of a background theme. This improvement started by the will of some people to feel immersed in a virtual space.
+      The development stopped between 2037 and 2045 due to the III world war between the Neo-URSS and the Great Capitalist America.
+      After a tremendous war the Neo-URSS resulted victorius and smart contact lenses restarted to improve.
+      During last years of '40s there was a huge revival of old fashioned way to think the net and in 2049 It is possible to say that the technology reached the complete development.</p>
+      <h3>Layout</h3>
+      <p>The use of smart contact lenses allow the display of paragraphs in the whole human visual area. Headers follow the human eye all along the area. However the poor state of technologies during the '10s and '20s does not allow the complete visualisation. That type of devices only allow the display of paragraphs divided in 2 series: odd ones are alligned on the left, even ones on the right. Additionally Tables, quotes, lists, figures show a third display that expand from the center. The initial animation show the progressive display of each element starting from an opacity of 0 and a complete padding.
+      I chose the background thinking to the fictional story: after a first moment of having real world reproduction as background, at the end of '40s there was a huge revival of the old way of thinking internet: a network of electrical connections. The image is repeated along the y-axis in order to cover the complete article.</p>
+      <p>Every elements have a light blue border and a light background color that become more opaque when hovering.</p>
+      <h3>Font</h3>
+      <p>According to the fictional story, I chose a font that reflect the actual way of thinking the future fonts: Zero Hour font is used for headers while I used the Neuropol one for the remaining text. I left the standard weight and letterspacing of CSS without any further work on them.</p>
 
-			<ul>Sources:
+      <h3>Animation</h3>
+      <p>There are 4 animations: one for odd paragraphs, one for even ones and one for tables, figures, quotes and lists. The beginning opacity is set to 0 with a linear transition to 1. Additionally paragraphs start from a 50% left and 50% padding and linearly dispay themselves until the result is reached.
+      There is a little delay of 2 seconds allowing the complete loading of pages on the homepage's iframe.
+      The <em>"animation-fill-mode: forwards;"</em> property maintain the final state of the animation.</p>
+      <h3>Sources:</h3>
+			<ul>
 				<li><a href="https://www.nasdaq.com/articles/what-can-we-expect-hologram-technology-future-2018-07-17" target="_blank">https://www.nasdaq.com/articles/what-can-we-expect-hologram-technology-future-2018-07-17</a></li>
 				<li><a href="https://www.nasdaq.com/articles/what-can-we-expect-hologram-technology-future-2018-07-17" target="_blank">https://phys.org/news/2015-02-high-tech-contact-lenses-eye.html</a></li>
 				<li><a href="https://www.visiondirect.co.uk/blog/smart-contact-lenses" target="_blank">https://www.visiondirect.co.uk/blog/smart-contact-lenses</a></li>
