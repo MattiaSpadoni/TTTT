@@ -149,20 +149,23 @@ body{
 
 /*--------------Initial page-------*/
 
-#initial{
+#initial {
 	display: block;
 	margin-left: 25%;
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
+
 }
 
-#initial_page_row{
-
+#initial_page_row {
 	margin-left: 25%;
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
+	padding: .5rem;
+	/*background-color: #f7efe6;
+	border: .01rem solid black;*/
 }
 
 .typewriter_effect {
@@ -201,13 +204,6 @@ body{
 	.btn-circle {
 		margin-left: 40%;
 	}
-}
-
-@media(max-width: 876px){
-	#first{
-	width: 100vw;
-	}
-
 }
 
 
