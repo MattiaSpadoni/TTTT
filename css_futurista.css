@@ -195,7 +195,7 @@ h1, h2, h3, h5 {
 }
 
 p, figcaption, h4, h6, table, q, {
-	font-family: "text";
+	font-family: "text" !important;
 	word-break: normal;
 	margin: 2%;
 }
