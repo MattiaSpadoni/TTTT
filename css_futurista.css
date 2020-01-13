@@ -1086,3 +1086,9 @@ article.eu_directive > p, ol, ul{
 }
 }
 
+/*------------------------------------------------*/
+
+h4, h5, h6, li, p, q, table, figcaption {
+	font-family: "text" !important;
+}
+
