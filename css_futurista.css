@@ -855,6 +855,8 @@ figure > table {
 }
 ul > table:nth-of-type(odd),
 ol > table:nth-of-type(odd),
+li > table:nth-of-type(odd),
+li > table:nth-of-type(even),
 ul > table:nth-of-type(even),
 ol > table:nth-of-type(even) {
 	word-break: break-all;
