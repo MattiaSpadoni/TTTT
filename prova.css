@@ -100,11 +100,15 @@ small {
 /*----- IFRAME -----*/
 
 iframe {
+		margin: 0 !important;
 		border: 0;
-		overflow: hidden;
-		left: 0;
+
+		padding-left: 0;
 		display: block;
 
+}
+.iframe_container {
+	padding: 0 !important;
 }
 
 #first{
@@ -205,6 +209,7 @@ body{
 	}
 
 }
+
 
 
 
