@@ -194,10 +194,14 @@ h1, h2, h3, h5 {
 	word-break: break-all;
 }
 
-p, figcaption, h4, h6, table, q, li {
+p, figcaption, h4, h6, table, q, {
 	font-family: "text";
 	word-break: normal;
 	margin: 2%;
+}
+
+li{
+	word-break: inherit !important;
 }
 
 
