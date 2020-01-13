@@ -657,6 +657,9 @@ article.eu_directive > ol:nth-of-type(even), ul:nth-of-type(even) {
 article.eu_directive > ol:nth-of-type(even):hover, ul:nth-of-type(even):hover {
 	background-color: rgb(128, 128, 255) !important;
 }
+article.eu_directive > ol, article.eu_directive > ul {
+	word-break: break-all !important;
+}
 
 /*-------------------- EU directive paragraphs ----------------*/
 
