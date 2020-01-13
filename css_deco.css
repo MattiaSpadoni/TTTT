@@ -347,11 +347,6 @@ figure > table:nth-of-type(even) {
 
 }
 
-
-article.eu_directive > body {
-	margin: 10% 10% 10%;
-}
-
 article.eu_directive > article {
 	padding: 0;
 }
