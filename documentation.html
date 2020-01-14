@@ -16,7 +16,23 @@
 <!-- new row -->
 	<div class="row">
     	<div class="col-12 col-md-6 col-lg-4 col-xl-4">
-      		<img src="#" clss=".img-fluid">
+        <figure class="figure">
+      		<img src="documentation_humanistic_1.jpg" clss="figure-img img-fluid">
+          <figcaption class="figure-caption text-right"><b>Cologny, Fondation Martin Bodmer, Cod. Bodmer 137</b><br>
+          <em>Parchment · 76 ff. · 20.2 x 14 cm · Italiy? · 15th century (beginning?)</em><br>
+          Plato, Phaedo.<br>
+          Black arrows point to subscriptions, in this case the line is darker and deeper than usual.</figcaption>
+        </figure>
+          <figure class="figure">
+          <img src="documentation_humanistic_2.jpg" clss="figure-img img-fluid"">
+          <figcaption class="figure-caption text-right">Taken from the same manuscript as the above image, word are written in a typical humanistic lowercase script.</figcaption>
+        </figure>
+         <figure class="figure">
+          <img src="documentation_humanistic_3.jpg" clss="figure-img img-fluid"">
+          <figcaption class="figure-caption text-right"><b>Book of Hours for the Use of Rome, Philadelphia, Philadelphia Museum of Art, 1967–30–120, fol. 19r</b><br>
+          Late medieval/early modern history period, this manuscript shows an example of the great use of colors in that time books
+          </figcaption>
+        </figure>
     	</div>
     	<div class="col-12 col-md-6 col-lg-8 col-xl-8">
       <h2>Author: Mattia Spadoni</h2>
@@ -30,6 +46,7 @@
 			<h3>Layout</h3>
       <p>The style starts from the use of a parchment background. The body of the HTML is set to a dark gray color, after it every article has a background image made by a parchment. It is a .png file, 721x864 px, it is repeated along the y axis to cover the all document without being streched. I cropped the image along its borders to make more realistic the shape of a parchment <em>folio</em> (sheet).
       Following a common humanistic practice I decided to use the golden ratio canon rule to designate the text area. Through the use of CSS percentage property I set the article padding to be coherent with the Golden ratio Rule. Bottom padding is 55%, the top is 34%, the left one to 21% and the right one is 13%. Through media queries I adapted the proportion to a more adequate one starting from a width minor than 768 px. I follow the Fibonacci sequence to maintain the golden ratio.
+
       
       <p>Clarification: the proportion is studied to show the ideally left page of a manuscript.
       In the Eu directive document the proportion is maintained at the article level.</p>
@@ -45,6 +62,10 @@
       <h3>Text decoration</h3>
 
       <p>All barely visible subscriptions under every line is the reproduction of a tipical sign of manuscripts. Monks used to mark the page with special tools, they used the resulting lines as a sign to write straight. I made them with the opacity of a black ink set to 0.2</p>
+
+      <h3>Images</h3>
+      <p>I did not apply any filter to images because it would be non "historically correct". Obviously photos did not exist during late medieval age, but at the same time there are plenty of manuscripts with rich colors and miniatures. Started from this assumption I think that if photography had existed during that age miniatures would have used them with the higher color available.</p>
+
       <h3>Sources</h3>
 			<ul>
 				<li><a href="http://www.e-codices.unifr.ch/en/fmb/cb-0137/1r" target="_blank">http://www.e-codices.unifr.ch/en/fmb/cb-0137/1r</a></li>
@@ -195,11 +216,11 @@
     	<div class="col-12">
       		<p>We created 2 different scripts for 2 different reasons.
       		The first script is the one that change the content and the style of the iframe. a little Javascript is used firstly to change the SRC of the iframe and then through the <em>onload</em> wait until the page is loaded and then the CSS is changed. Javascript go inside the iframe document and change the link element marked with a special ID. During the charge the iframe is set to <em>display: none;</em> and JS makes visible another div that normally has no display. This div has a background loading gif that we use during the iframe loading.
-          Cross origin domain problems are avoided thanks to the fact that all pages share the same domain so the browser does not stop these operation although forbidden.
+          Cross origin domain problems are avoided thanks to the fact that all pages share the same domain so the browser does not stop these operation although generally forbidden.
           </p>
 
       		<p>The second script is used to automatically populate the page of the EU-directive. In fact at the beginning the page is empty and only through 2 fetch methods the page is populated with all tags coming from 2 different HTML documents. We realized this script in order to have something that automatically take elements of different language versions of the same document and puts them in a grid without a long manual encoding. To work properly the user must have clear what he want. Indeed the script go inside the <em>article</em> element and take all its children, put them in an HTML collection and then it can start to iterate and place all elements in the page. According to our preferences we created an raw html without any other intermediate div or sections in order to take basic elements. It is possible to change the structure according to our preferences.</p>
-          <p>All elements are put in a grid resulting in a grid with an equal point of start for each element. The language difference still allows having different end points.</p>
+          <p>All elements are put in a grid with an equal point of start for each couple of elements. The language difference still allows having different end points.</p>
     	</div>
   	</div>  	
   </div>

@@ -120,4 +120,12 @@ li {
 	margin-left: 25%;
 }
 
+body {
+	background-color: #f5e5d5;
+}
+
+img {
+	width: 100%;
+	object-fit: contain;
+}
 
