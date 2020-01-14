@@ -45,8 +45,12 @@ h1 {
 	text-align: center;
 }
 
-#h_disc {
+.h_disc {
 	color: #faac5f;
+	font-weight: bold;
+}
+.h_doc{
+	color: white;
 	font-weight: bold;
 }
 
@@ -98,19 +102,24 @@ li {
 
 
 #separator_0 {
-	background-color: brown;
+	background-color:rgba(255, 102, 51, 0.7);
+	padding-top: 1rem;
 }
 #separator_1 {
-	background-color: red;
+	background-color: rgba(153, 0, 51, 0.3);
+	padding-top: 1rem;
 }
 #separator_2 {
-	background-color: yellow;
+	background-color: rgba(255, 0, 102, 0.5);
+	padding-top: 1rem;
 }
 #separator_3 {
-	background-color: green;
+	background-color: rgba(0, 255, 255, 0.4);
+	padding-top: 1rem;
 }
 #separator_4 {
-	background-color: blue;
+	background-color: rgba(214, 214, 194, 0.7);
+	padding-top: 1rem;
 }
 
 
@@ -120,9 +129,7 @@ li {
 	margin-left: 25%;
 }
 
-body {
-	background-color: #f5e5d5 !important;
-}
+
 
 img {
 	width: 100%;
